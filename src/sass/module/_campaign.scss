@@ -1,0 +1,31 @@
+@use "global" as *;
+
+.campaign__inner {
+    position: relative;
+}
+
+.campaign__container {
+    margin-top: rem(27);
+    margin-right: calc(50% - 50vw);
+
+    @include mq(md) {
+        margin-top: rem(46);
+    }
+}
+
+.campaign__btn {
+    margin-top: rem(31);
+    padding-bottom: rem(16);
+
+    @include mq(md) {
+        margin-top: rem(72);
+    }
+}
+
+.campaign__title--size {
+    @include mq(md) {
+        font-size: rem(24);
+        line-height: calc(35 / 24);
+        padding-bottom: rem(5);
+    }
+}

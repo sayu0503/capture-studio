@@ -1,0 +1,306 @@
+@use "global" as *;
+
+.page-contact {
+    position: relative;
+}
+
+.page-contact::before {
+    content: "";
+    background-image: url(../images/common/fish_2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    width: rem(120);
+    height: rem(55);
+    top: rem(-23);
+    left: calc(50% - min(48vw, rem(308)));
+    z-index: -1;
+
+    @include mq(md) {
+        width: rem(301);
+        height: rem(138);
+        top: rem(-35);
+        left: calc(50% - min(48vw, rem(619)));
+    }
+}
+.page-contact__inner.inner {
+    @include mq(md){
+        max-width: 700px + strip-unit($padding-pc) * 2;
+    }
+}
+
+.page-contact__item {
+    border-bottom: 1px dotted $green-accent;
+    padding-bottom: rem(24);
+
+    @include mq(md) {
+        display: grid;
+        grid-template-columns: 200fr 480fr;
+        gap: rem(20);
+        padding-bottom: rem(40);
+    }
+}
+
+.page-contact__item:not(:first-child) {
+    margin-top: rem(24);
+
+    @include mq(md) {
+        margin-top: rem(40);
+    }
+}
+
+.page-contact__checkbox-item {
+    border-bottom: 1px dotted $green-accent;
+    padding-bottom: rem(24);
+
+    @include mq(md) {
+        display: grid;
+        grid-template-columns: 200fr 480fr;
+        column-gap: rem(20);
+    }
+}
+
+.page-contact__checkbox-item:not(:first-child) {
+    margin-top: rem(24);
+
+    @include mq(md) {
+        margin-top: rem(40);
+    }
+}
+
+.page-contact__item--layout {
+    @include mq(md) {
+        margin-top: rem(40);
+    }
+}
+
+.page-contact__label {
+    display: flex;
+    align-items: center;
+    gap: rem(8);
+
+    @include mq(md) {
+        align-items: baseline;
+    }
+}
+
+.page-contact__label-text {
+    font-size: rem(16);
+    font-weight: $bold;
+    font-family: $base-font-family;
+    color: $green;
+    line-height: calc(23 / 16);
+
+    @include mq(md) {
+        font-size: rem(16);
+        line-height: calc(23 / 16);
+    }
+}
+
+.page-contact__required {
+    font-size: rem(12);
+    font-weight: $regular;
+    font-family: $base-font-family;
+    color: $white;
+    line-height: calc(17 / 12);
+    background-color: $red;
+    padding-block: rem(2);
+    padding-inline: rem(12);
+    letter-spacing: 0.4em;
+    text-indent: rem(4);
+}
+
+.page-contact__input,
+.page-contact__select,
+.page-contact__textarea,
+.wpcf7-form-control.wpcf7-text,
+.wpcf7-form-control.wpcf7-email,
+.wpcf7-form-control.wpcf7-tel,
+.wpcf7-form-control.wpcf7-textarea {
+    width: 100%;
+    font-size: rem(16);
+    font-weight: $regular;
+    font-family: $base-font-family;
+    color: $black;
+    line-height: calc(23 / 16);
+    border: 1px solid $green-accent;
+    padding-top: rem(8);
+    padding-bottom: rem(7);
+    padding-inline: rem(16);
+    margin-top: rem(16);
+    display: block;
+    @include mq(md) {
+        margin-top: 0;
+    }
+}
+
+.page-contact__input::placeholder,
+.page-contact__select::placeholder,
+.wpcf7-form-control.wpcf7-text::placeholder,
+.wpcf7-form-control.wpcf7-email::placeholder,
+.wpcf7-form-control.wpcf7-tel::placeholder
+ {
+    color: $green2;
+}
+
+.page-contact__select-wrap {
+    position: relative;
+    display: inline-block;
+    width: 100%;
+    cursor: pointer;
+}
+
+.page-contact__select-wrap::after {
+    content: url(../images/common/contact-arrow.svg);
+    position: absolute;
+    top: rem(15);
+    right: rem(8);
+    pointer-events: none;
+
+    @include mq(md) {
+        top: 10%;
+    }
+}
+
+.page-contact__select {
+    font-size: rem(12);
+    padding-left: rem(7);
+}
+
+.page-contact__select:invalid {
+    font-size: rem(12);
+    font-weight: $regular;
+    font-family: $base-font-family;
+    color: $black;
+    line-height: calc(17 / 12);
+}
+
+.page-contact__textarea {
+    border: 1px solid $green-accent;
+    width: 100%;
+    margin-top: rem(16);
+    height: rem(200);
+    resize: none;
+    padding: rem(8) rem(16);
+
+    @include mq(md) {
+        margin-top: 0;
+    }
+}
+
+.page-contact__checkbox {
+    font-size: rem(16);
+}
+
+.page-contact__checkbox-group,
+.wpcf7-form-control.wpcf7-checkbox {
+    display: flex;
+    flex-direction: column;
+    gap: rem(4);
+
+    @include mq(md) {
+    }
+}
+
+span.wpcf7-list-item {
+    margin-left: 0;
+    position: relative;
+  }
+
+.wpcf7-list-item-label {
+    cursor: pointer;
+    font-size: rem(16);
+  }
+
+.page-contact__button-block {
+    margin-top: rem(40);
+    margin-inline: auto;
+
+    @include mq(md) {
+        margin-top: rem(80);
+        padding-inline: rem(163);
+    }
+}
+
+.page-contact__button {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+    @include mq(md) {
+        margin-top: rem(20);
+    }
+}
+
+
+ .page-contact__error-box {
+     text-align: center;
+ }
+
+.wpcf7-spinner {
+	display: none !important;
+}
+
+.wpcf7-form-control.wpcf7-not-valid {
+  border: 1px solid $red;
+  background-color: rgba($color: $red, $alpha: 0.2);
+}
+
+.wpcf7-form-control.wpcf7-not-valid::placeholder{
+    color: $white;
+}
+
+
+.wpcf7-form-control.wpcf7-checkbox {
+    border: none;
+  background-color: transparent;
+}
+
+.wpcf7 form.invalid .wpcf7-response-output {
+    border: none;
+    font-size: rem(14);
+    font-weight: $regular;
+    font-family: $base-font-family;
+    color: $red;
+     line-height: calc(20 / 14);
+     display: inline-block;
+     text-align: left;
+     text-indent: -1em;
+     padding-bottom: rem(40);
+
+     @include mq(md) {
+         margin-top: rem(0);
+         padding-bottom: rem(50);
+     }
+}
+
+.wpcf7 form .wpcf7-response-output {
+    margin: 0;
+    padding-left: rem(70);
+    padding-right: rem(65);
+    @include mq(md){
+      padding-left: rem(90);
+    }
+
+}
+
+.wpcf7-not-valid-tip {
+    margin-top: rem(3);
+    font-size: rem(14);
+    font-weight: $regular;
+    font-family: $base-font-family;
+    padding-bottom: rem(40);
+}
+
+
+.wpcf7 form .wpcf7-response-output {
+    border: none;
+    font-size: rem(14);
+    font-weight: $regular;
+    font-family: $base-font-family;
+    padding-bottom: rem(40);
+    @include mq(md) {
+        margin-top: rem(0);
+        padding-bottom: rem(50);
+    }
+}

@@ -1,0 +1,267 @@
+@use "global" as *;
+
+.button,
+.custom-submit {
+    cursor: pointer;
+    transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+}
+
+.button {
+    position: relative;
+    right: rem(3);
+    z-index: 3;
+    border: rem(1) solid $green-accent;
+    color: $green-accent;
+    display: block;
+    font-weight: $regular;
+    max-width: rem(202);
+    padding: rem(15) rem(40);
+    margin-inline: auto;
+    z-index: 1;
+    font-size: rem(14);
+    font-family: $third-font-family;
+    line-height: calc(22 / 14);
+}
+
+.custom-submit {
+    position: relative;
+    appearance: none;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    color: $white;
+    display: block;
+    font-weight: $regular;
+    padding: rem(15) rem(125) rem(15) rem(40);
+    font-size: rem(14);
+    font-family: $third-font-family;
+    line-height: calc(22 / 14);
+}
+
+.button--layout {
+    text-align: left;
+    padding-left: rem(55);
+
+    @include mq(md) {
+        margin-left: rem(80);
+        margin-right: none;
+    }
+
+}
+
+.button.slide::before {
+    content: "";
+    position: absolute;
+    inset: rem(2) rem(-5) rem(-6) rem(3);
+    border: 1px solid $green-accent;
+    z-index: -1;
+}
+
+.button__submit {
+    background: $green-accent;
+    color: $white;
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+    width: rem(202);
+    border: 1px solid $green-accent;
+}
+
+@media (any-hover: hover) {
+    .button__submit:hover {
+        color: $green-accent;
+    }
+
+    .button__submit:hover::after {
+        transform: scale(1, 1);
+    }
+}
+
+.button__submit::before {
+    content: "";
+    position: absolute;
+    inset: rem(2) rem(-5) rem(-6) rem(3);
+    border: 1px solid $green-accent;
+    z-index: -1;
+}
+
+.button--design.slide::before {
+    border: 1px solid $white;
+}
+
+.button span {
+    position: relative;
+    z-index: 3;
+    display: inline-block;
+}
+
+.button span::after {
+    content: "";
+    position: absolute;
+    top: -20%;
+    left: 108%;
+    bottom: 0;
+    width: rem(40);
+    height: rem(8);
+    margin: auto;
+    border-right: rem(1) solid $white;
+    border-bottom: rem(1) solid $white;
+    transform: skew(45deg);
+    transition: .2s;
+    box-sizing: border-box;
+}
+
+@media (any-hover: hover) {
+    .button:hover span::after {
+        border-color: $green-accent;
+    }
+
+    .button--design:hover span::after {
+        border-color: $white;
+    }
+}
+
+.button span::after {
+    content: "";
+    position: absolute;
+    top: -20%;
+    left: 108%;
+    bottom: 0;
+    width: rem(40);
+    height: rem(8);
+    margin: auto;
+    border-right: rem(1) solid $white;
+    border-bottom: rem(1) solid $white;
+    transform: skew(45deg);
+    transition: .2s;
+    box-sizing: border-box;
+}
+
+
+.button-arrow::after {
+    content: "";
+    position: absolute;
+    top: -10%;
+    left: 45%;
+    bottom: 0;
+    width: rem(40);
+    height: rem(8);
+    margin: auto;
+    border-right: rem(1) solid $white;
+    border-bottom: rem(1) solid $white;
+    transform: skew(45deg);
+    transition: .2s;
+    box-sizing: border-box;
+}
+
+.button--layout span::after {
+    left: 137%;
+}
+
+.button--design {
+    background-color: $white;
+    border: rem(1) solid $white;
+}
+
+.button--design span::after {
+    left: 137%;
+    border-bottom: 0.0625rem solid $green-accent;
+    border-right: 0.0625rem solid $green-accent;
+
+}
+
+.button.slide {
+    background: $green-accent;
+    color: $white;
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+}
+
+.button--design.slide {
+    background-color: $white;
+    color: $green-accent;
+    position: relative;
+    z-index: 1;
+    overflow: visible;
+}
+
+.button.slide::after {
+    background: $white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+    z-index: -1;
+}
+
+.button__submit::after {
+    background: $white;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+    z-index: -1;
+}
+
+.button--design.slide::after {
+    background: $green-accent;
+    position: absolute;
+    top: 0;
+    left: 0;
+    content: "";
+    width: 100%;
+    height: 100%;
+    transform: scale(0, 1);
+    transform-origin: left top;
+    transition: .2s cubic-bezier(0.45, 0, 0.55, 1);
+    z-index: -1;
+}
+
+@media (any-hover: hover) {
+    .button.slide:hover {
+        color: $green-accent;
+    }
+
+    .button.slide:hover::after {
+        transform: scale(1, 1);
+    }
+
+    .button--design.slide:hover {
+        color: $white;
+    }
+
+    .button--design.slide:hover::after {
+        transform: scale(1, 1);
+    }
+}
+
+@media (any-hover: hover) {
+.button__submit:hover,
+.button__submit:hover .custom-submit,
+.button__submit:hover .button-arrow::after {
+    border-right: rem(1) solid $green-accent;
+    border-bottom: rem(1) solid $green-accent;
+    color: $green-accent;
+}
+.button__submit:hover::after {
+    transform: scale(1, 1);
+}
+
+.button__submit:hover .button-arrow::after {
+    border-right: rem(1) solid $green-accent;
+    border-bottom: rem(1) solid $green-accent;
+}
+}
+
+
+    

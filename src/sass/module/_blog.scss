@@ -1,0 +1,76 @@
+@use "global" as *;
+
+.blog {
+    position: relative;
+}
+
+.blog::before {
+    @include mq(md) {
+        content: "";
+        background-image: url(../images/common/blog_img_bg.jpg);
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
+        width: 100%;
+        height: rem(500);
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: -1;
+    }
+}
+
+.blog:after {
+    @include mq(md) {
+        content: "";
+        display: block;
+        background-image: url(../images/common/fish.png);
+        position: absolute;
+        background-repeat: no-repeat;
+        background-size: cover;
+        left: calc(50% - min(48vw, rem(621)));
+        top: rem(24);
+        width: rem(437);
+        height: rem(201);
+    }
+}
+
+body#top.blog.logged-in.admin-bar.customize-support::after {
+    display: none !important;
+  }
+
+.blog__contents {
+    margin-top: rem(33);
+    padding-inline: rem(5);
+
+    @include mq(md) {
+        margin-top: rem(90);
+    }
+}
+
+.blog-cards {
+    display: grid;
+    gap: rem(34);
+    grid-template-columns: repeat(1, 1fr);
+    place-items: center;
+
+    @include mq(md) {
+        grid-template-columns: repeat(3, 1fr);
+        row-gap: rem(80);
+    }
+}
+.blog-cards--layout {
+    display: grid;
+
+    @include mq(md) {
+         grid-template-columns: 1fr 1fr;
+    }
+}
+
+.blog__btn {
+    margin-top: rem(38);
+
+    @include mq(md) {
+        margin-top: rem(80);
+    }
+}

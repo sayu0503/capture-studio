@@ -1,0 +1,48 @@
+@use "global" as *;
+
+.modal {
+  background: rgba($gray2, 80%);
+  display: none;
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 2000;
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease, visibility 0.3s ease;
+}
+
+.modal.is-open {
+  visibility: visible;
+  /* 表示状態 */
+  opacity: 1;
+  /* 完全に不透明 */
+}
+
+.modal__image img {
+  opacity: 1;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  top: 0;
+  width: 100%;
+  margin: auto;
+  max-height: 50%;
+  max-width: 90%;
+  object-fit: contain;
+  position: absolute;
+  @include mq(md){
+    max-height: 90%;
+    max-width: 64%;
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
+  height: 100dvh;
+}

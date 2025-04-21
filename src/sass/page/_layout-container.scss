@@ -1,0 +1,12 @@
+@use "global" as *;
+
+.layout-container {
+    display: grid;
+    grid-template-rows: auto 1fr auto;
+    grid-template-columns: 100%;
+    min-height: 100vh;
+}
+
+.layout-container--color {
+    background-color: $green-accent;
+}

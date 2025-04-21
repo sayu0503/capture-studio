@@ -1,0 +1,150 @@
+@use "global" as *;
+
+/******************************************
+  お問い合わせ項目
+*******************************************/
+.checkbox__text,
+.wpcf7-list-item-label {
+   position: relative;
+   font-size: rem(16);
+   font-weight: $regular;
+   font-family: $base-font-family;
+   color: $green;
+   line-height: calc(23 / 16);
+   width: 100%;
+   padding-left: rem(22);
+}
+
+.checkbox__text::before,
+.wpcf7-list-item-label::before {
+   content: "";
+   position: absolute;
+   top: 55%;
+   left: 0;
+   transform: translateY(-50%);
+   width: rem(14);
+   height: rem(14);
+   border: 1px solid $green-accent;
+   background: $white;
+
+   @include mq(md) {
+      top: 57%;
+   }
+}
+
+.use-invalid+.checkbox__text::before,
+.use-invalid .wpcf7-list-item-label::before {
+   border-color: $red;
+   background-color: rgba($color: $red, $alpha: 0.2);
+   content: "";
+}
+
+.checked-valid+.checkbox__text::before,
+.checked-valid .wpcf7-list-item-label::before {
+   border-color: $green-accent;
+   background-color: $white;
+}
+
+.checkbox__text::after,
+.wpcf7-list-item-label::after {
+   content: url(../images/common/contact-check.svg);
+   position: absolute;
+   top: 50%;
+   left: rem(2);
+   transform: translateY(-50%);
+   width: rem(9);
+   height: auto;
+   opacity: 0;
+   border: none;
+
+
+   @include mq(md) {
+      top: 46%;
+      left: rem(2);
+   }
+}
+
+.wpcf7-list-item-label::after {
+   content: url(../images/common/contact-check.svg);
+   position: absolute;
+   top: 50%;
+   left: rem(2);
+   transform: translateY(-50%);
+   width: rem(9);
+   height: auto;
+   opacity: 0;
+   border: none;
+
+   @include mq(md) {
+       top: 46%;
+       left: rem(2);
+   }
+}
+
+[data-name="checkbox-127"] {
+   margin-top: rem(15);
+   @include mq(md){
+       margin-top: rem(0);
+   }
+}
+
+/******************************************
+  同意チェックボックス
+*******************************************/
+.checkbox__consent--text,
+.wpcf7-form-control-wrap[data-name="checkbox-agree"] .wpcf7-list-item-label {
+   font-size: rem(14);
+   font-weight: $regular;
+   font-family: $base-font-family;
+   color: $black;
+   line-height: calc(22 / 14);
+   position: relative;
+   margin-inline: auto;
+   padding-left: rem(36);
+   max-width: rem(295);
+   display: block;
+
+   @include mq(md) {
+      max-width: none;
+      min-width: rem(373);
+   }
+}
+
+.checkbox__consent--text::before,
+.wpcf7-form-control-wrap[data-name="checkbox-agree"] .wpcf7-list-item-label::before {
+   content: "";
+   position: absolute;
+   top: 27%;
+   left: rem(6);
+   transform: translateY(-50%);
+   width: rem(22);
+   height: rem(22);
+   border: 1px solid $green-accent;
+   background: $white;
+
+   @include mq(md) {
+      margin-top: 3%;
+      top: 0%;
+      left: 0;
+   }
+}
+
+.checkbox__consent--text::after,
+.wpcf7-form-control-wrap[data-name="checkbox-agree"] .wpcf7-list-item-label::after {
+   content: "";
+   position: absolute;
+   top: 13%;
+   left: rem(13);
+   transform: rotate(40deg);
+   width: rem(8);
+   height: rem(12);
+   border-bottom: 2px solid $red;
+   border-right: 2px solid $red;
+   opacity: 0;
+
+   @include mq(md) {
+      top: 20%;
+      left: rem(8);
+   }
+}
+

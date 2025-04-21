@@ -1,0 +1,9 @@
+@use "global" as *;
+
+.privacy-footer {
+    margin-top: rem(107);
+
+    @include mq(md) {
+        margin-top: rem(160);
+    }
+}

@@ -1,0 +1,72 @@
+@use "global" as *;
+
+.breadcrumb__inner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.breadcrumb__text {
+    display: flex;
+    align-items: center;
+}
+
+.breadcrumb__text::after {
+    display: inline-block;
+    transform: rotate(45deg);
+    width: rem(7);
+    height: rem(7);
+    margin-left: rem(6);
+    margin-right: rem(8);
+    border-top: 1px solid $green;
+    border-right: 1px solid $green;
+    content: '';
+}
+
+body.error404 .breadcrumb__text::after {
+    border-top: 1px solid $white;
+    border-right: 1px solid $white;
+}
+
+
+
+.breadcrumb__text {
+    font-size: rem(14);
+    font-weight: $regular;
+    font-family: $base-font-family;
+    color: $green;
+    line-height: calc(20 / 14);
+    letter-spacing: 0;
+}
+
+
+
+.breadcrumb__inner span,
+.breadcrumb__inner span a{
+    display: flex;
+    align-items: center;
+    font-size: rem(14);
+    font-weight: $regular;
+    font-family: $base-font-family;
+    color: $green;
+    line-height: calc(20 / 14);
+    letter-spacing: 0;
+}
+
+
+.breadcrumb__text--color,
+.breadcrumb__link--color {
+    color: $white;
+}
+.breadcrumb__text--color:not(:last-of-type)::after {
+    border-top: 1px solid $white;
+    border-right: 1px solid $white;
+    content: '';
+}
+
+/* 404ページ専用のパンくずリストの文字色を白にする */
+body.error404 .breadcrumb__inner span,
+body.error404 .breadcrumb__inner span a {
+    color: $white;
+}
+
+
