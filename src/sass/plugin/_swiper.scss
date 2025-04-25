@@ -10,10 +10,15 @@
 
 .swiper-slide img {
   object-fit: cover;
+  filter: brightness(80%);
 }
 
 .swiper-slide.campaign__slide {
   height: auto;
+}
+
+.campaign-card__img img{
+  filter: none;
 }
 
 .swiper-button-next,

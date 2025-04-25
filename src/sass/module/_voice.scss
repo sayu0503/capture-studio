@@ -6,36 +6,81 @@
     }
 }
 
-.voice::after {
-    @include mq(md) {
-        content: "";
-        display: block;
-        background-image: url(../images/common/fish_2.png);
+.voice__image_1 {
+    display: none;
+    @include mq(md){
         position: absolute;
-        background-repeat: no-repeat;
-        background-size: cover;
-        top: rem(-120);
-        left: calc(50% - min(48vw, rem(621)));
-        width: rem(301);
-        height: rem(138);
+        display: block;
+        top: rem(-140);
+        left: calc(50% - min(48vw, rem(650)));
+        width: rem(272);
+        height: rem(218);
+        animation: swing 3s ease infinite;
     }
 }
 
-.voice::before {
-    @include mq(md) {
+.voice__image_2 {
+    display: none;
+    @include mq(md){
+        position: absolute;
         display: block;
-        content: "";
-        background-image: url(../images/common/tatunootoshigo.png);
-        position: absolute;
-        background-repeat: no-repeat;
-        background-size: cover;
-        position: absolute;
-        bottom: rem(-71);
-        right: calc(50% - min(48vw, rem(540)));
-        width: rem(71);
-        height: rem(162);
+        bottom: rem(-65);
+        right: calc(50% - min(48vw, rem(650)));
+        width: rem(200);
+        height: rem(200);
+        animation: swing 3s ease infinite;
     }
 }
+
+@keyframes swing {
+    0% {
+        transform: rotate(0);
+    }
+    25% {
+        transform: rotate(3deg);
+    }
+    50% {
+        transform: rotate(0);
+    }
+    75% {
+        transform: rotate(3deg);
+    }
+    100% {
+        transform: rotate(0);
+    }
+}
+
+
+// .voice::after {
+//     @include mq(md) {
+//         content: "";
+//         display: block;
+//         background-image: url(../images/common/speakswallow.png);
+//         position: absolute;
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         top: rem(-140);
+//         left: calc(50% - min(48vw, rem(650)));
+//         width: rem(272);
+//         height: rem(218);
+//     }
+// }
+
+// .voice::before {
+//     @include mq(md) {
+//         display: block;
+//         content: "";
+//         background-image: url(../images/common/swingswallow.png);
+//         position: absolute;
+//         background-repeat: no-repeat;
+//         background-size: cover;
+//         position: absolute;
+//         bottom: rem(-71);
+//         right: calc(50% - min(48vw, rem(650)));
+//         width: rem(200);
+//         height: rem(200);
+//     }
+// }
 
 .voice__contents {
     margin-top: rem(44);

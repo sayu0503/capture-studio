@@ -22,7 +22,7 @@
     line-height: calc(35 / 24);
     margin-top: rem(8);
     padding-bottom: rem(4);
-    border-bottom: 1px solid $green-accent;
+    border-bottom: 1px solid $deepskyblue;
     width: 100%;
 
     @include mq(md) {
@@ -65,10 +65,10 @@
     font-size: rem(16);
     font-weight: $regular;
     font-family: $base-font-family;
-    line-height: calc(24  / 16);
+    line-height: calc(24 / 16);
 }
 
-.single-blog__container  > :not(:first-child) {
+.single-blog__container> :not(:first-child) {
     margin-top: rem(24);
 
     @include mq(md) {

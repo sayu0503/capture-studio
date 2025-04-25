@@ -16,10 +16,10 @@
     height: rem(38);
     font-weight: $bold;
     font-size: rem(16);
-    color: $green-accent;
+    color: $deepskyblue;
     background-color: $white;
     transition: 0.3s ease;
-    border: 1px solid $green-accent;
+    border: 1px solid $deepskyblue;
     font-family: $fourth-font-family;
     line-height: calc(19 / 16);
 }
@@ -27,10 +27,11 @@
 @media (any-hover: hover) {
     .wp-pagenavi a:hover {
         color: #FFF;
-        background-color: $green-accent;
+        background-color: $deepskyblue;
         opacity: 1;
     }
 }
+
 .wp-pagenavi--gap {
     gap: rem(23);
 
@@ -41,8 +42,8 @@
 
 .wp-pagenavi span.current {
     color: #FFF;
-    background-color: $green-accent;
-    border-color: $green-accent;
+    background-color: $deepskyblue;
+    border-color: $deepskyblue;
     font-weight: bold;
 }
 
@@ -63,8 +64,8 @@
     content: '';
     width: rem(10);
     height: rem(10);
-    border-top: solid 1px $green-accent;
-    border-right: solid 1px $green-accent;
+    border-top: solid 1px $deepskyblue;
+    border-right: solid 1px $deepskyblue;
     position: absolute;
     transition: all 0.3s ease;
 }

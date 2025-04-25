@@ -10,8 +10,8 @@
     position: relative;
     right: rem(3);
     z-index: 3;
-    border: rem(1) solid $green-accent;
-    color: $green-accent;
+    border: rem(1) solid $redbrick;
+    color: $redbrick;
     display: block;
     font-weight: $regular;
     max-width: rem(202);
@@ -52,23 +52,23 @@
     content: "";
     position: absolute;
     inset: rem(2) rem(-5) rem(-6) rem(3);
-    border: 1px solid $green-accent;
+    border: 1px solid $redbrick;
     z-index: -1;
 }
 
 .button__submit {
-    background: $green-accent;
+    background: $redbrick;
     color: $white;
     position: relative;
     z-index: 1;
     overflow: visible;
     width: rem(202);
-    border: 1px solid $green-accent;
+    border: 1px solid $redbrick;
 }
 
 @media (any-hover: hover) {
     .button__submit:hover {
-        color: $green-accent;
+        color: $redbrick;
     }
 
     .button__submit:hover::after {
@@ -80,7 +80,7 @@
     content: "";
     position: absolute;
     inset: rem(2) rem(-5) rem(-6) rem(3);
-    border: 1px solid $green-accent;
+    border: 1px solid $redbrick;
     z-index: -1;
 }
 
@@ -112,7 +112,7 @@
 
 @media (any-hover: hover) {
     .button:hover span::after {
-        border-color: $green-accent;
+        border-color: $redbrick;
     }
 
     .button--design:hover span::after {
@@ -164,13 +164,13 @@
 
 .button--design span::after {
     left: 137%;
-    border-bottom: 0.0625rem solid $green-accent;
-    border-right: 0.0625rem solid $green-accent;
+    border-bottom: 0.0625rem solid $redbrick;
+    border-right: 0.0625rem solid $redbrick;
 
 }
 
 .button.slide {
-    background: $green-accent;
+    background: $redbrick;
     color: $white;
     position: relative;
     z-index: 1;
@@ -214,7 +214,7 @@
 }
 
 .button--design.slide::after {
-    background: $green-accent;
+    background: $redbrick;
     position: absolute;
     top: 0;
     left: 0;
@@ -229,7 +229,7 @@
 
 @media (any-hover: hover) {
     .button.slide:hover {
-        color: $green-accent;
+        color: $redbrick;
     }
 
     .button.slide:hover::after {
@@ -249,19 +249,16 @@
 .button__submit:hover,
 .button__submit:hover .custom-submit,
 .button__submit:hover .button-arrow::after {
-    border-right: rem(1) solid $green-accent;
-    border-bottom: rem(1) solid $green-accent;
-    color: $green-accent;
+    border-right: rem(1) solid $redbrick;
+    border-bottom: rem(1) solid $redbrick;
+    color: $redbrick;
 }
 .button__submit:hover::after {
     transform: scale(1, 1);
 }
 
 .button__submit:hover .button-arrow::after {
-    border-right: rem(1) solid $green-accent;
-    border-bottom: rem(1) solid $green-accent;
+    border-right: rem(1) solid $redbrick;
+    border-bottom: rem(1) solid $redbrick;
 }
 }
-
-
-    

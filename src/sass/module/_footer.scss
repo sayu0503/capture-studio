@@ -1,7 +1,7 @@
 @use "global" as *;
 
 .footer {
-    background-color: $green-accent;
+    background-color: #2C3E50;
     padding: rem(47) 0;
 
     @include mq(md) {
@@ -16,14 +16,15 @@
 .footer__container {
     @include mq(md) {
         display: flex;
+        align-items: baseline;
     }
 }
 
 .footer__logo-link img {
-    width: rem(120);
+    width: rem(180);
 
     @include mq(md) {
-        width: rem(200);
+        width: rem(300);
     }
 }
 
@@ -85,6 +86,6 @@
     margin-top: rem(39);
 
     @include mq(md) {
-        margin-top: rem(23);
+        margin-top: rem(40);
     }
 }

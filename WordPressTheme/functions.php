@@ -51,14 +51,24 @@ function my_theme_enqueue_scripts() {
         true
     );
 
-    // GSAP
-    wp_enqueue_script(
-        'gsap',
-        'https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js',
-        array(),
-        '3.12.5',
-        true
-    );
+    // GSAP（CDN版）
+wp_enqueue_script(
+    'gsap',
+    'https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/gsap.min.js',
+    array(),
+    '3.12.7',
+    true
+);
+
+// GSAP ScrollTrigger（CDN版）
+// gsapが依存にあるので、gsap読み込み後に実行される
+wp_enqueue_script(
+    'gsap-scrolltrigger',
+    'https://cdn.jsdelivr.net/npm/gsap@3.12.7/dist/ScrollTrigger.min.js',
+    array('gsap'),
+    '3.12.7',
+    true
+);
 
     // メインJS
     wp_enqueue_script(

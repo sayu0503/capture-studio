@@ -27,12 +27,12 @@
         <div class="page-campaign__category category">
           <div class="category__items">
 
-          <?php
-    $all_class = is_post_type_archive('campaign') ? 'is-active' : '';
-    ?>
-    <a href="<?php echo esc_url(get_post_type_archive_link('campaign')); ?>" class="category__item <?php echo esc_attr($all_class); ?>">
-        <p class="category__item-text">ALL</p>
-    </a>
+                <?php
+            $all_class = is_post_type_archive('campaign') ? 'is-active' : '';
+            ?>
+            <a href="<?php echo esc_url(get_post_type_archive_link('campaign')); ?>" class="category__item <?php echo esc_attr($all_class); ?>">
+                <p class="category__item-text">ALL</p>
+            </a>
 
     <?php
     $terms = get_terms([

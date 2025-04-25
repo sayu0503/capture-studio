@@ -24,7 +24,7 @@
    transform: translateY(-50%);
    width: rem(14);
    height: rem(14);
-   border: 1px solid $green-accent;
+   border: 1px solid $deepskyblue;
    background: $white;
 
    @include mq(md) {
@@ -41,7 +41,7 @@
 
 .checked-valid+.checkbox__text::before,
 .checked-valid .wpcf7-list-item-label::before {
-   border-color: $green-accent;
+   border-color: $deepskyblue;
    background-color: $white;
 }
 
@@ -76,15 +76,16 @@
    border: none;
 
    @include mq(md) {
-       top: 46%;
-       left: rem(2);
+      top: 46%;
+      left: rem(2);
    }
 }
 
 [data-name="checkbox-127"] {
    margin-top: rem(15);
-   @include mq(md){
-       margin-top: rem(0);
+
+   @include mq(md) {
+      margin-top: rem(0);
    }
 }
 
@@ -119,7 +120,7 @@
    transform: translateY(-50%);
    width: rem(22);
    height: rem(22);
-   border: 1px solid $green-accent;
+   border: 1px solid $deepskyblue;
    background: $white;
 
    @include mq(md) {
@@ -147,4 +148,3 @@
       left: rem(8);
    }
 }
-

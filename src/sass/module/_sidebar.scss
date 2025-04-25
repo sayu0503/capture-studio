@@ -27,7 +27,7 @@
     gap: rem(8);
     justify-content: start;
     width: min(100%, rem(226));
-    border-left: rem(8) solid $green-accent;
+    border-left: rem(8) solid $deepskyblue;
     padding-left: rem(16);
 }
 
@@ -172,7 +172,7 @@
     font-size: rem(16);
     line-height: calc(24/16);
     color: $green;
-    border-bottom: 1px solid $green-accent;
+    border-bottom: 1px solid $deepskyblue;
     padding-bottom: rem(8);
     text-align: center;
 }
@@ -218,7 +218,7 @@
     font-weight: $bold;
     font-size: rem(32);
     line-height: 1;
-    color: $green-accent;
+    color: $deepskyblue;
 }
 
 .sidebar__archive {
@@ -234,7 +234,7 @@
     font-size: rem(24);
     font-weight: $regular;
     font-family: $base-font-family;
-    color: $green-accent;
+    color: $deepskyblue;
     line-height: calc(35 / 24);
     display: none;
     display: flex;
@@ -244,6 +244,7 @@
     cursor: pointer;
     transition: all 0.3s;
 }
+
 .sidebar__archive-month.is-open {
     display: block;
 }

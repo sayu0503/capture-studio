@@ -9,7 +9,7 @@
     width: 100%;
     height: 100vh;
     height: 100dvh;
-    background-color: $green-accent;
+    background-color: #2C3E50;
     margin-top: rem(80);
 }
 
@@ -72,7 +72,7 @@
 .sp-nav__title::before {
     content: "";
     display: inline-block;
-    background-image: url(../images/common/hitode.png);
+    background-image: url(../images/common/leaf.png);
     width: rem(18);
     height: rem(18);
     background-size: contain;

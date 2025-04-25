@@ -39,12 +39,12 @@
 
 .campaign-card__label {
     font-family: $base-font-family;
-    color: $green-accent;
+    color: $deepskyblue;
     font-weight: $regular;
     font-size: rem(12);
     line-height: calc(22/12);
     display: inline-block;
-    border: rem(1) solid $green-accent;
+    border: rem(1) solid $deepskyblue;
     text-align: center;
     padding: rem(3) rem(11);
 
@@ -61,7 +61,7 @@
     font-size: rem(16);
     line-height: calc(24/16);
     color: $green;
-    border-bottom: 1px solid $green-accent;
+    border-bottom: 1px solid $deepskyblue;
     padding-bottom: rem(8);
 
     @include mq(md) {
@@ -90,9 +90,10 @@
         line-height: calc(24/16);
     }
 }
+
 .campaign-card__text--layout {
-    @include mq(md){
-       margin-top: rem(23);
+    @include mq(md) {
+        margin-top: rem(23);
     }
 }
 
@@ -102,7 +103,8 @@
     justify-content: center;
     margin-top: rem(8);
     gap: rem(16);
-    @include mq(md){
+
+    @include mq(md) {
         gap: rem(44);
     }
 }
@@ -134,7 +136,8 @@
     font-weight: $bold;
     font-size: rem(32);
     line-height: 1;
-    color: $green-accent;
+    color: $deepskyblue;
+
     @include mq(md) {
         font-size: rem(40);
     }
@@ -156,18 +159,20 @@
 .campaign-card__meta {
     text-align: center;
     margin-top: rem(32);
-    @include mq(md){
-       margin-top: rem(30);
-       text-indent: rem(-14);
+
+    @include mq(md) {
+        margin-top: rem(30);
+        text-indent: rem(-14);
     }
 
 }
+
 .campaign-card__meta,
 .campaign-card__meta time {
     font-size: rem(16);
     font-weight: $bold;
     font-family: $fourth-font-family;
-    color: $green-accent;
+    color: $deepskyblue;
     line-height: calc(18 / 16);
 }
 
@@ -175,12 +180,13 @@
     font-size: rem(14);
     font-weight: $regular;
     font-family: $base-font-family;
-    color: $green-accent;
+    color: $deepskyblue;
     line-height: calc(18 / 14);
     margin-top: rem(5);
-    @include mq(md){
-       text-indent: 0;
-       margin-top: rem(8);
+
+    @include mq(md) {
+        text-indent: 0;
+        margin-top: rem(8);
     }
 }
 

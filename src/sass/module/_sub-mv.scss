@@ -5,6 +5,7 @@
 }
 
 .sub-mv__image img{
+    filter: brightness(80%);
     min-height: rem(460);
     @include mq(md){
         min-height: rem(548);

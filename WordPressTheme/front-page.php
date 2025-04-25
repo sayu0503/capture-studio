@@ -42,8 +42,8 @@
             </div>
 
             <div class="mv__title-wrap">
-                <p class="mv__title">diving</p>
-                <p class="mv__subtitle">into the ocean</p>
+                <p class="mv__title">capture</p>
+                <p class="mv__subtitle">Moments that matter</p>
             </div>
         </div>
     </div>
@@ -93,10 +93,32 @@
                     <div class="campaign-card__title"><?php the_title(); ?></div>
                     <div class="campaign-card__wrap">
                       <div class="campaign-card__text">全部コミコミ(お一人様)</div>
-                      <div class="campaign-card__price">
-                        <p class="campaign-card__first-price"><?php the_field('first_price'); ?></p>
-                        <p class="campaign-card__second-price campaign-card__second-price--layout"><?php the_field('second_price'); ?></p>
-                      </div>
+                      <?php
+                            // グループフィールド「campaign_price」を取得
+                            $campaign_price = get_field('campaign_price');
+
+                            if ($campaign_price) {
+                                // 通常価格と割引価格を取得
+                                $first_price = $campaign_price['first_price'] ?? '';    // 通常価格
+                                $second_price = $campaign_price['second_price'] ?? '';  // 割引価格
+
+                                // 割引価格がある場合
+                                if (!empty($second_price)) {
+                                    ?>
+                                    <div class="campaign-card__price">
+                                        <?php if (!empty($first_price)) { ?>
+                                            <!-- 通常価格と割引価格を表示 -->
+                                            <p class="campaign-card__first-price"><?php echo esc_html($first_price); ?></p>
+                                            <p class="campaign-card__second-price campaign-card__second-price--layout"><?php echo esc_html($second_price); ?></p>
+                                        <?php } else { ?>
+                                            <!-- 割引価格のみ表示 -->
+                                            <p class="campaign-card__second-price"><?php echo esc_html($second_price); ?></p>
+                                        <?php } ?>
+                                    </div>
+                                    <?php
+                                }
+                            }
+                            ?>
                     </div>
                   </div>
                 </div>
@@ -133,21 +155,22 @@
           <div class="about__image-container">
             <picture>
               <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img_2.jpg" media="(min-width: 768px)" width="1760" height="1162">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img_2-sp.jpg" alt="黄色い二匹の魚が泳いでいる様子" decoding="async" loading="lazy">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img_2-sp.jpg" alt="写真を取り合う生徒たち" decoding="async" loading="lazy">
             </picture>
           </div>
           <div class="about__image-container-sub">
             <picture>
-              <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img_1-sp.jpg" media="(min-width: 768px)" width="1212" height="800">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img_1.jpg" alt="瓦屋根の上のシーサー" decoding="async" loading="lazy" width="194" height="388">
+              <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img_1.jpg" media="(min-width: 768px)" width="1212" height="800">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img_1-sp.jpg" alt="カメラで画像を確認する女性" decoding="async" loading="lazy" width="194" height="388">
             </picture>
           </div>
           <div class="about__text-group">
-            <p class="about__title">Dive into<br>the Ocean</p>
+            <p class="about__title">We Snap<br>Moments</p>
             <div class="about__group">
-              <p class="about__text">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキスト<span
-                  class="about__sp-visibility">が入ります。</span></p>
+              <p class="about__text">カメラを初めて手にする方も、もっと上手になりたい方も。私たちの写真教室は、一人ひとりのペースや目的に合わせて、丁寧にサポートします。<br>
+              「こんな風に撮ってみたかった！」<br>
+               そんな気持ちを一緒にカタチにしていきましょう。
+            </p>
               <div class="about__btn">
                 <a href="<?php echo esc_url(home_url("/about-us")) ?>" class="button slide"><span>View&nbsp;more</span></a>
               </div>
@@ -163,7 +186,7 @@
         <div class="information__section-header">
           <div class="section-header">
             <p class="section-header__title">Information</p>
-            <h2 class="section-header__subtitle">ダイビング情報</h2>
+            <h2 class="section-header__subtitle">コース紹介</h2>
           </div>
         </div>
         <div class="information__contents">
@@ -172,9 +195,12 @@
               width="1080" height="712">
           </div>
           <div class="information__body">
-            <div class="information__title">ライセンス講習</div>
-            <div class="information__text">当店はダイビングライセンス（Cカード）世界最大の教育機関PADIの「正規店」として店舗登録されています。<br>
-              正規登録店として、初めての方でも安心安全にライセンス取得をサポート致します。</div>
+            <div class="information__title">カメラ体験</div>
+            <p class="information__text">はじめての方でも安心して参加できるカメラ体験講座。<br>
+                構図のコツや自然光の活かし方など、撮る楽しさをわかりやすく学べます。<br>
+                シャッターを切るたび、いつもの景色が新しく見えてくる──<br>
+                そんな感動を、一緒に体験してみませんか？
+             </p>
             <div class="information__btn">
               <a href="<?php echo esc_url(home_url("/information")) ?>" class="button slide"><span>View&nbsp;more</span></a>
             </div>
@@ -233,6 +259,12 @@
 
     <!--Voice-->
     <section class="top-voice voice">
+    <div class="voice__image_1">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/speakswallow.png" alt="話す燕のアイコン" decoding="async" loading="lazy" width="272" height="218">
+    </div>
+    <div class="voice__image_2">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/swingswallow.png" alt="飛び回る燕のアイコン" decoding="async" loading="lazy" width="187" height="197">
+    </div>
   <div class="voice__inner inner">
     <div class="voice__section-header">
       <div class="section-header">
@@ -240,6 +272,8 @@
         <h2 class="section-header__subtitle">お客様の声</h2>
       </div>
     </div>
+    
+    
     <div class="voice__contents">
       <div class="voice-cards">
         <?php
@@ -367,7 +401,7 @@
     <div class="price__image colorbox">
             <picture>
               <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/price_img_1.jpg" media="(min-width: 768px)">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/price_img_2.jpg" alt="ウミガメが泳いでいる様子" decoding="async" loading="lazy"
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/price_img_2.jpg" alt="花の写真" decoding="async" loading="lazy"
                 width="1492" height="984">
             </picture>
           </div>

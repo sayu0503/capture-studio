@@ -5,7 +5,7 @@
 }
 
 .header.is-open {
-    background-color: $green-accent;
+    background-color: #2C3E50;
 }
 
 .header {
@@ -66,9 +66,9 @@
     display: block;
     position: relative;
     z-index: 9999;
-    width: rem(107);
+    width: rem(180);
 
     @include mq(md) {
-        width: rem(140);
+        width: rem(220);
     }
 }

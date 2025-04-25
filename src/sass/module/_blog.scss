@@ -24,14 +24,14 @@
     @include mq(md) {
         content: "";
         display: block;
-        background-image: url(../images/common/fish.png);
+        background-image: url(../images/common/diary.png);
         position: absolute;
         background-repeat: no-repeat;
         background-size: cover;
         left: calc(50% - min(48vw, rem(621)));
         top: rem(24);
-        width: rem(437);
-        height: rem(201);
+        width: rem(240);
+        height: rem(240);
     }
 }
 

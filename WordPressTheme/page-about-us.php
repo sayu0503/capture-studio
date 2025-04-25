@@ -40,11 +40,12 @@
                 </picture>
             </div>
             <div class="about__text-group about__text-group">
-                <p class="about__title about__title--absolute">Dive into<br>the Ocean</p>
+                <p class="about__title about__title--absolute">We Snap<br>Moments</p>
                 <div class="about__group">
-                    <p class="about__text about__text--layout">ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。<br>
-                        ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。ここにテキストが入ります。</p>
-                </div>
+                    <p class="about__text about__text--layout">こカメラを初めて手にする方も、もっと上手になりたい方も。私たちの写真教室は、一人ひとりのペースや目的に合わせて、丁寧にサポートします。<br>
+              「こんな風に撮ってみたかった！」<br>
+               そんな気持ちを一緒にカタチにしていきましょう。
+                    </p>
             </div>
         </div>
     </div>
@@ -78,7 +79,7 @@ if (!empty($valid_images)) : ?>
     <div class="gallery__inner inner">
         <div class="section-header">
             <p class="section-header__title section-header__title--line-height">Gallery</p>
-            <h2 class="section-header__subtitle section-header__subtitle--layout">フォト</h2>
+            <h2 class="section-header__subtitle section-header__subtitle--layout">受講後に撮影された写真をご紹介</h2>
         </div>
         <div class="gallery__contents">
             <?php foreach ($valid_images as $image) : ?>

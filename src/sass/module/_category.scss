@@ -23,14 +23,14 @@
 }
 
 .category__item-text {
-    border: 1px solid $green-accent;
+    border: 1px solid $deepskyblue;
     padding-inline: rem(5);
     padding-top: rem(6);
     padding-bottom: rem(4);
     font-size: rem(14);
     font-weight: $regular;
     font-family: $base-font-family;
-    color: $green-accent;
+    color: $deepskyblue;
     line-height: calc(22 / 14);
     letter-spacing: 0;
     background-color: $white;
@@ -39,14 +39,14 @@
 }
 
 .category__item.is-active .category__item-text {
-    background-color: $green-accent;
+    background-color: $deepskyblue;
     color: $white;
 }
 
 @media (any-hover: hover) {
     .category__item-text:hover {
         cursor: pointer;
-        background-color: $green-accent;
+        background-color: $deepskyblue;
         color: $white;
     }
 }

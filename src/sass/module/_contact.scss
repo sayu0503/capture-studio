@@ -6,20 +6,20 @@
 
 .contact:after {
     content: "";
-    background-image: url(../images/common/fish_3.png);
+    background-image: url(../images/common/watage.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    width: rem(109);
-    height: rem(50);
-    top: rem(-27);
-    right: calc(50% - min(48vw, rem(172)));
+    width: rem(80);
+    height: rem(80);
+    top: rem(-80);
+    right: calc(50% - min(48vw, rem(260)));
 
     @include mq(md) {
-        top: rem(-40);
-        right: calc(50% - min(48vw, rem(670)));
-        width: rem(301);
-        height: rem(138);
+        top: rem(-70);
+        right: calc(50% - min(48vw, rem(600)));
+        width: rem(150);
+        height: rem(150);
     }
 }
 
@@ -39,7 +39,7 @@
         width: 53%;
         padding-left: 0;
         padding-right: rem(85);
-        border-right: rem(1) solid $green-accent;
+        border-right: rem(1) solid $deepskyblue;
     }
 }
 
@@ -52,11 +52,9 @@
     position: relative;
     text-align: center;
     width: 100%;
-    border-bottom: rem(1) solid $green-accent;
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    border-bottom: rem(1) solid $deepskyblue;
 
     @include mq(md) {
-        filter: none;
         padding-bottom: rem(5);
     }
 }
@@ -68,21 +66,15 @@
     bottom: rem(-8);
     width: 100%;
     height: rem(4);
-    background-color: rgba(0, 0, 0, 0.05);
-    filter: blur(rem(2));
 
-    @include mq(md) {
-        background-color: rgba(0, 0, 0, 0);
-    }
 }
 
 .contact__info-title img {
     display: inline-block;
-    width: rem(174);
-    filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+    width: rem(250);
 
     @include mq(md) {
-        width: rem(200);
+        width: rem(350);
         filter: none;
     }
 }
@@ -109,10 +101,7 @@
     font-size: rem(16);
     line-height: calc(24/16);
     color: $green;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-
     @include mq(md) {
-        text-shadow: none;
         text-align: left;
     }
 }
@@ -165,14 +154,12 @@
     font-weight: $regular;
     font-size: rem(14);
     line-height: calc(18/14);
-    color: $green-accent;
+    color: $deepskyblue;
     margin-top: rem(8);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     @include mq(md) {
         text-align: center;
         margin-top: rem(9);
-        text-shadow: none;
     }
 }
 
@@ -190,17 +177,15 @@
     font-weight: $regular;
     font-size: rem(80);
     line-height: 1;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     color: $green;
 
     @include mq(md) {
         font-size: rem(80);
-        text-shadow: none;
     }
 }
 
 .contact__column-section-header-title::first-letter {
-    color: $green-accent;
+    color: $deepskyblue;
 }
 
 .contact__column-section-header-subtitle {
@@ -208,13 +193,11 @@
     font-weight: $regular;
     font-size: rem(12);
     line-height: calc(18/12);
-    color: $green-accent;
+    color: $deepskyblue;
     margin-top: rem(-6);
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 
     @include mq(md) {
         margin-top: rem(-4);
         letter-spacing: 0.05em;
-        text-shadow: none;
     }
 }

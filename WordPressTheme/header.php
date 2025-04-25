@@ -30,7 +30,6 @@
       <nav class="header__pc-nav pc-nav">
         <ul class="pc-nav__items">
           <li class="pc-nav__item">
-
             <a href="<?php echo esc_url(home_url("/campaign")) ?>" class="pc-nav__link">
               Campaign
               <p class="pc-nav__subtitle">キャンペーン</p>
@@ -45,7 +44,7 @@
           <li class="pc-nav__item">
             <a href="<?php echo esc_url(home_url("/information")) ?>" class="pc-nav__link">
               Information
-              <p class="pc-nav__subtitle">ダイビング情報</p>
+              <p class="pc-nav__subtitle">コース紹介</p>
             </a>
           </li>
           <li class="pc-nav__item">
@@ -75,7 +74,7 @@
           <li class="pc-nav__item">
             <a href="<?php echo esc_url(home_url("/contact")) ?>" class="pc-nav__link">
               Contact
-              <p class="pc-nav__subtitle">お問合せ</p>
+              <p class="pc-nav__subtitle">お問い合わせ</p>
             </a>
           </li>
         </ul>
@@ -91,56 +90,24 @@
                       <li class="sp-nav__title">
                         <a href="<?php echo esc_url(home_url("/campaign")) ?>">キャンペーン</a>
                       </li>
-                      <li class="sp-nav__body">
-                        <ul class="sp-nav__lists">
-                          <li class="sp-nav__list">
-                          <a href="<?php echo esc_url(home_url('/campaign_category/lisence')); ?>">ライセンス講習</a>
-                          </li>
-                          <li class="sp-nav__list">
-                          <a href="<?php echo esc_url(home_url('/campaign_category/fun-diving')); ?>">ファンダイビング</a>
-                          </li>
-                          <li class="sp-nav__list">
-                          <a href="<?php echo esc_url(home_url('/campaign_category/trial-diving')); ?>">体験ダイビング</a>
-                          </li>
-                        </ul>
-                      </li>
                     </ul>
                     <ul class="sp-nav__wrapper">
                       <li class="sp-nav__title">
                         <a href="<?php echo esc_url(home_url("/about-us")) ?>">私たちについて</a>
                       </li>
                     </ul>
-                  </div>
-                  <div class="sp-nav__group">
                     <ul class="sp-nav__wrapper">
                       <li class="sp-nav__title">
-                        <a href="<?php echo esc_url(home_url("/information")) ?>">ダイビング情報</a>
-                      </li>
-                      <li class="sp-nav__body">
-                        <ul class="sp-nav__lists">
-                          <li class="sp-nav__list">
-                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>information#tab__content01">ライセンス講習</a>
-                          </li>
-                          <li class="sp-nav__list">
-                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>information#tab__content02">体験ダイビング</a>
-                          </li>
-                          <li class="sp-nav__list">
-                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>information#tab__content03">ファンダイビング</a>
-                          </li>
-                        </ul>
+                        <a href="<?php echo esc_url(home_url("/information")) ?>">コース紹介</a>
                       </li>
                     </ul>
+                  </div>
+                  <div class="sp-nav__group">
                     <ul class="sp-nav__wrapper">
                       <li class="sp-nav__title">
                         <a href="<?php echo esc_url(home_url("/blog")) ?>">ブログ</a>
                       </li>
                     </ul>
-                  </div>
-                </div>
-              </div>
-              <div class="sp-nav__container">
-                <div class="sp-nav__flex">
-                  <div class="sp-nav__group">
                     <ul class="sp-nav__wrapper">
                       <li class="sp-nav__title">
                         <a href="<?php echo esc_url(home_url("/voice")) ?>">お客様の声</a>
@@ -150,26 +117,14 @@
                       <li class="sp-nav__title">
                         <a href="<?php echo esc_url(home_url("/price")) ?>">料金一覧</a>
                       </li>
-                      <li class="sp-nav__body">
-                        <ul class="sp-nav__lists">
-                          <li class="sp-nav__list">
-                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>price#page-price__group01">ライセンス講習</a>
-                          </li>
-                          <li class="sp-nav__list">
-                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>price#page-price__group02">体験ダイビング</a>
-                          </li>
-                          <li class="sp-nav__list">
-                            <a href="<?php echo esc_url( home_url( '/' ) ); ?>price#page-price__group03">ファンダイビング</a>
-                          </li>
-                          <li class="sp-nav__list">
-                                <a href="<?php echo esc_url( home_url( '/' ) ); ?>price#page-price__group04">スペシャルダイビング</a>
-                          </li>
-                        </ul>
-                      </li>
                     </ul>
                   </div>
+                </div>
+              </div>
+              <div class="sp-nav__container">
+                <div class="sp-nav__flex">
                   <div class="sp-nav__group">
-                    <ul class="sp-nav__wrapper">
+                  <ul class="sp-nav__wrapper">
                       <li class="sp-nav__title">
                         <a href="<?php echo esc_url(home_url("/faq")) ?>">よくある質問</a>
                       </li>
@@ -184,6 +139,8 @@
                         <a href="<?php echo esc_url(home_url("/terms-of-service")) ?>">利用規約</a>
                       </li>
                     </ul>
+                  </div>
+                  <div class="sp-nav__group">
                     <ul class="sp-nav__wrapper">
                       <li class="sp-nav__title">
                         <a href="<?php echo esc_url(home_url("/sitemap")) ?>">サイトマップ</a>

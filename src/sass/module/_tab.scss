@@ -24,7 +24,7 @@
     font-size: rem(14);
     font-weight: $regular;
     font-family: $base-font-family;
-    color: $green-accent;
+    color: $deepskyblue;
     line-height: calc(20 / 14);
     transition: color 0.3s;
     transition: background-color 0.3s, color 0.3s;
@@ -43,12 +43,13 @@
         width: min(100%, rem(300));
     }
 }
+
 @media (any-hover: hover) {
-   .tab__button:hover {
-    cursor: pointer;
-    background-color: $green-accent;
-    color: $white;
-   }
+    .tab__button:hover {
+        cursor: pointer;
+        background-color: $deepskyblue;
+        color: $white;
+    }
 }
 
 .tab__button--whale::before,
@@ -81,9 +82,11 @@
     .tab__button--whale:hover::before {
         background-image: url(../images/common/whale-white.png);
     }
+
     .tab__button--shark:hover::before {
         background-image: url(../images/common/shark-white.png);
     }
+
     .tab__button--small-fish:hover::before {
         background-image: url(../images/common/small-fish-white.png);
     }
@@ -91,7 +94,7 @@
 
 .tab__button.is-active {
     cursor: pointer;
-    background-color: $green-accent;
+    background-color: $deepskyblue;
     color: $white;
 }
 
@@ -131,7 +134,7 @@
 
 
 .tab__content {
-    border: 1px solid $green-accent;
+    border: 1px solid $deepskyblue;
     padding-block: rem(24);
     padding-inline: rem(24);
     display: none;
@@ -149,7 +152,7 @@
 }
 
 .tab__title {
-    border-bottom: 1px solid $green-accent;
+    border-bottom: 1px solid $deepskyblue;
     padding-bottom: rem(8);
     font-size: rem(24);
     font-weight: $bold;

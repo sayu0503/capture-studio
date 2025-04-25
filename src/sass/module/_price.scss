@@ -2,7 +2,7 @@
 
 .price {
     padding: rem(80) 0 rem(85);
-    background-color: $green2;
+    background-color: $gray5;
 
     @include mq(md) {
         position: relative;
@@ -15,14 +15,14 @@
         content: "";
         position: absolute;
         display: block;
-        background-image: url(../images/common/fish_3.png);
+        background-image: url(../images/common/camera_leaf.png);
         background-repeat: no-repeat;
         background-size: cover;
         bottom: rem(60);
         left: rem(100);
-        width: rem(437);
-        height: rem(201);
-        left: calc(50% - min(48vw, rem(619)));
+        width: rem(280);
+        height: rem(160);
+        left: calc(50% - min(48vw, rem(500)));
     }
 }
 
@@ -75,7 +75,7 @@
     font-size: rem(16);
     line-height: calc(24/16);
     color: $green;
-    border-bottom: rem(1) solid $green-accent;
+    border-bottom: rem(1) solid $deepskyblue;
     padding-bottom: rem(4);
 }
 

@@ -18,7 +18,7 @@
     font-family: $base-font-family;
     color: $white;
     line-height: calc(23 / 16);
-    background-color: $green-accent;
+    background-color: $deepskyblue;
     padding-block: rem(16);
     padding-left: rem(16);
     cursor: pointer;
@@ -80,7 +80,7 @@
     line-height: calc(23 / 16);
     padding-block: rem(23);
     padding-inline: rem(16);
-    border: 1px solid $green-accent;
+    border: 1px solid $deepskyblue;
     display: none;
 
     @include mq(md) {
