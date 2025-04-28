@@ -26,48 +26,42 @@
         <div class="page-information__inner inner">
             <div class="page-information__tab tab">
                 <div class="tab__list">
-                    <button class="tab__button tab__button--whale js-tab-button is-active">ライセンス<br class="u-mobile">講習</button>
-                    <button class="tab__button tab__button--shark js-tab-button">ファン<br class="u-mobile">ダイビング</button>
-                    <button class="tab__button tab__button--small-fish js-tab-button">体験<br class="u-mobile">ダイビング</button>
+                    <button class="tab__button tab__button--camera js-tab-button is-active">カメラ体験</button>
+                    <button class="tab__button tab__button--camera js-tab-button">ステップアップ</button>
+                    <button class="tab__button tab__button--camera js-tab-button">ポートレート</button>
                 </div>
                 <div class="tab__contents">
                     <div class="tab__content js-tab-content is-active" id="tab__content01">
                         <div class="tab__text-block">
-                            <h2 class="tab__title">ライセンス講習</h2>
+                            <h2 class="tab__title">カメラ体験</h2>
                             <p class="tab__text">
-                                泳げない人も、ちょっと水が苦手な人も、ダイビングを「安全に」楽しんでいただけるよう、スタッフがサポートいたします！スキューバダイビングを楽しむためには最低限の知識とスキルが要求されます。知識やスキルと言ってもそんなに難しい事ではなく、安全に楽しむ事を目的としたものです。プロダイバーの指導のもと知識とスキルを習得しCカードを取得して、ダイバーになろう！
+                            カメラ初心者向けの体験コースです。電源の入れ方や構え方、ピントの合わせ方など、カメラの基本操作から丁寧にレクチャーします。オートモードや撮影シーンに合わせた設定の使い分けを学びながら、実際に撮影も行います。写真を撮る楽しさを実感できる、はじめの一歩にぴったりの内容です。
                             </p>
                         </div>
                         <div class="tab__image">
-                            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/information_media_1.jpg" alt="ライセンス" decoding="async" loading="lazy"
+                            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/information_media_1.jpg" alt="新緑の中カメラを持って立つ女性" decoding="async" loading="lazy"
                                 width="984" height="626">
                         </div>
                     </div>
                     <div class="tab__content js-tab-content" id="tab__content03">
                         <div class="tab__text-block">
-                            <h2 class="tab__title">ファンダイビング</h2>
+                            <h2 class="tab__title">ステップアップ</h2>
                             <p class="tab__text">
-                                ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を
-                                代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポ
-                                イントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海
-                                岸」等もご用意！</p>
+                            カメラの基本を習得した方を対象に、ワンランク上の撮影テクニックを学ぶ講座です。露出・絞り・シャッタースピード・ISO感度の関係を理解し、自分の意図を写真に反映できるようになることが目標です。実践を交えながら、構図や光の使い方もしっかり身につけていきます。</p>
                         </div>
                         <div class="tab__image">
-                            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/information_media_2.jpg" alt="ライセンス" decoding="async" loading="lazy"
+                            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/information_media_2.jpg" alt="菜の花畑で写真を構える女性" decoding="async" loading="lazy"
                                 width="984" height="626">
                         </div>
                     </div>
                     <div class="tab__content js-tab-content" id="tab__content02">
                         <div class="tab__text-block">
-                            <h2 class="tab__title">体験ダイビング</h2>
+                            <h2 class="tab__title">ポートレート</h2>
                             <p class="tab__text">
-                                ブランクダイバー、ライセンスを取り立ての方も安心！沖縄本島を
-                                代表する「青の洞窟」（真栄田岬）やケラマ諸島などメジャーなポ
-                                イントはモチロンのこと、最北端「辺戸岬」や最南端の「大渡海
-                                岸」等もご用意！</p>
+                            ポートレート撮影の基礎を学べる入門講座です。光の読み方やモデルとの距離感、背景の活かし方など、人物を魅力的に撮るための基本テクニックを実践を通して学びます。カメラ初心者でも安心して参加でき、自然な表情の引き出し方もレクチャーします。</p>
                         </div>
                         <div class="tab__image">
-                            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/information_media_3.jpg" alt="体験ダイビング" decoding="async" loading="lazy"
+                            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/information_media_3.jpg" alt="太陽に照らせれた女性の横顔" decoding="async" loading="lazy"
                                 width="984" height="626">
                         </div>
                     </div>

@@ -6,7 +6,7 @@
 
 .page-blog::before {
     content: "";
-    background-image: url(../images/common/fish_2.png);
+    background-image: url(../images/common/watage.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
@@ -17,9 +17,9 @@
     z-index: -1;
 
     @include mq(md) {
-        width: rem(301);
-        height: rem(138);
-        top: rem(-70);
+        width: rem(150);
+        height: rem(150);
+        top: rem(-150);
         left: calc(50% - min(48vw, rem(621)));
     }
 }
@@ -46,3 +46,8 @@
         margin-top: 0;
     }
 }
+
+body#top.blog.wp-theme-WordPressTheme::after {
+    display: none;
+}
+

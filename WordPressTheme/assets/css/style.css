@@ -1733,9 +1733,9 @@ body.error404 {
 	background-size: cover;
 	content: "";
 	height: 4.375rem;
-	left: calc(50% - min(48vw, 10.8125rem));
+	left: calc(50% - min(48vw, 21.875rem));
 	position: absolute;
-	top: -1.5rem;
+	top: -2.5rem;
 	width: 4.375rem;
 	z-index: 2;
 }
@@ -1749,7 +1749,7 @@ body.error404 {
 }
 
 .page-blog::before {
-	background-image: url(../images/common/fish_2.png);
+	background-image: url(../images/common/watage.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	content: "";
@@ -1767,6 +1767,10 @@ body.error404 {
 
 .page-blog__sidebar {
 	margin-top: 5.125rem;
+}
+
+body#top.blog.wp-theme-WordPressTheme::after {
+	display: none;
 }
 
 .page-campaign {
@@ -2060,15 +2064,15 @@ span.wpcf7-list-item {
 }
 
 .page-information::before {
-	background-image: url(../images/common/fish_2.png);
+	background-image: url(../images/common/watage.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	content: "";
-	height: 3.4375rem;
-	left: calc(50% - min(48vw, 19.25rem));
+	height: 4.375rem;
+	left: calc(50% - min(48vw, 21.875rem));
 	position: absolute;
-	top: -6.25rem;
-	width: 7.5rem;
+	top: -2.5rem;
+	width: 4.375rem;
 	z-index: -1;
 }
 
@@ -2984,7 +2988,7 @@ span.wpcf7-list-item {
 }
 
 .single-blog__container li::before {
-	background-image: url(../images/common/hitode-green.png);
+	background-image: url(../images/common/leaf-blue.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	content: "";
@@ -2996,7 +3000,7 @@ span.wpcf7-list-item {
 }
 
 .single-blog__container li:not(:first-child) {
-	margin-top: 0.25rem;
+	margin-top: 1rem;
 }
 
 .single-blog__pagenavi {
@@ -3005,6 +3009,20 @@ span.wpcf7-list-item {
 
 .single-blog__sidebar {
 	margin-top: 5rem;
+}
+
+h2.wp-block-heading {
+	background: #DDEAF3;
+	border-bottom: solid 3px #2C6D9D;
+	color: #000;
+	padding: 0.5rem;
+}
+
+h3.wp-block-heading {
+	background: transparent;
+	border-left: solid 5px #2C6D9D;
+	color: #000;
+	padding: 0.25rem 0.5rem;
 }
 
 .sp-nav {
@@ -3105,7 +3123,9 @@ span.wpcf7-list-item {
 }
 
 .sub-mv {
+	background-color: #fff;
 	position: relative;
+	z-index: 1;
 }
 
 .sub-mv__image img {
@@ -3149,7 +3169,7 @@ span.wpcf7-list-item {
 }
 
 .tab__button {
-	background-color: #DDF0F1;
+	background-color: #DDEAF3;
 	box-shadow: 0rem 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
 	color: #2C6D9D;
 	font-family: "Noto Sans JP", sans-serif;
@@ -3166,34 +3186,10 @@ span.wpcf7-list-item {
 	width: 6.375rem;
 }
 
-.tab__button--whale::before {
-	background-image: url(../images/common/whale-green.png);
-}
-
-.tab__button--shark::before {
-	background-image: url(../images/common/shark-green.png);
-}
-
-.tab__button--small-fish::before {
-	background-image: url(../images/common/small-fish-green.png);
-}
-
 .tab__button.is-active {
 	background-color: #2C6D9D;
 	color: #fff;
 	cursor: pointer;
-}
-
-.tab__button--whale.is-active::before {
-	background-image: url(../images/common/whale-white.png);
-}
-
-.tab__button--shark.is-active::before {
-	background-image: url(../images/common/shark-white.png);
-}
-
-.tab__button--small-fish.is-active::before {
-	background-image: url(../images/common/small-fish-white.png);
 }
 
 .tab__contents {
@@ -3549,16 +3545,8 @@ span.wpcf7-list-item {
 	cursor: pointer;
 }
 
-.tab__button--whale:hover::before {
-	background-image: url(../images/common/whale-white.png);
-}
-
-.tab__button--shark:hover::before {
-	background-image: url(../images/common/shark-white.png);
-}
-
-.tab__button--small-fish:hover::before {
-	background-image: url(../images/common/small-fish-white.png);
+.tab__button--camera:hover::before {
+	background-image: url(../images/common/camera_blue.png);
 }
 
 .swiper-button-next:hover::after,
@@ -3913,10 +3901,6 @@ html {
 
 .campaign-card__text--layout {
 	margin-top: 1.4375rem;
-}
-
-.campaign-card__price {
-	gap: 2.75rem;
 }
 
 .campaign-card__first-price {
@@ -4283,10 +4267,10 @@ html {
 }
 
 .page-blog::before {
-	height: 8.625rem;
+	height: 9.375rem;
 	left: calc(50% - min(48vw, 38.8125rem));
-	top: -4.375rem;
-	width: 18.8125rem;
+	top: -9.375rem;
+	width: 9.375rem;
 }
 
 .page-blog__contents {
@@ -4424,10 +4408,10 @@ html {
 }
 
 .page-information::before {
-	height: 8.625rem;
-	left: calc(50% - min(48vw, 38.8125rem));
-	top: -4.375rem;
-	width: 18.8125rem;
+	height: 12.5rem;
+	left: calc(50% - min(48vw, 37.5rem));
+	top: -9.375rem;
+	width: 12.5rem;
 }
 
 .page-price::before {
@@ -4706,21 +4690,19 @@ html {
 	width: min(100%, 18.75rem);
 }
 
-.tab__button--whale::before,
-.tab__button--shark::before,
-.tab__button--small-fish::before {
+.tab__button--camera::before {
+	background-image: url(../images/common/camera_blue.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	content: "";
 	display: inline-block;
-	height: 4rem;
+	height: 3.75rem;
 	transition: all 0.3s, color 0.3s;
-	width: 4rem;
+	width: 3.75rem;
 }
 
-.tab__button--whale.is-active::before,
-.tab__button--shark.is-active::before,
-.tab__button--small-fish.is-active::before {
+.tab__button--camera.is-active::before {
+	background-image: url(../images/common/camera_white.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	content: "";

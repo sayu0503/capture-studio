@@ -20,7 +20,7 @@
     padding-block: rem(10);
     padding-inline: rem(16);
     box-shadow: rem(0) rem(4) rem(4) rgba($black, 0.25);
-    background-color: $green2;
+    background-color: #DDEAF3;
     font-size: rem(14);
     font-weight: $regular;
     font-family: $base-font-family;
@@ -51,44 +51,22 @@
         color: $white;
     }
 }
-
-.tab__button--whale::before,
-.tab__button--shark::before,
-.tab__button--small-fish::before {
+.tab__button--camera::before {
     @include mq(md) {
         content: "";
         display: inline-block;
         background-repeat: no-repeat;
         background-size: cover;
-        width: rem(64);
-        height: rem(64);
+        width: rem(60);
+        height: rem(60);
         transition: all 0.3s, color 0.3s;
+        background-image: url(../images/common/camera_blue.png);
     }
-}
-
-.tab__button--whale::before {
-    background-image: url(../images/common/whale-green.png);
-}
-
-.tab__button--shark::before {
-    background-image: url(../images/common/shark-green.png);
-}
-
-.tab__button--small-fish::before {
-    background-image: url(../images/common/small-fish-green.png);
 }
 
 @media (any-hover: hover) {
-    .tab__button--whale:hover::before {
-        background-image: url(../images/common/whale-white.png);
-    }
-
-    .tab__button--shark:hover::before {
-        background-image: url(../images/common/shark-white.png);
-    }
-
-    .tab__button--small-fish:hover::before {
-        background-image: url(../images/common/small-fish-white.png);
+    .tab__button--camera:hover::before {
+        background-image: url(../images/common/camera_blue.png);
     }
 }
 
@@ -98,9 +76,7 @@
     color: $white;
 }
 
-.tab__button--whale.is-active::before,
-.tab__button--shark.is-active::before,
-.tab__button--small-fish.is-active::before {
+.tab__button--camera.is-active::before {
     @include mq(md) {
         content: "";
         display: inline-block;
@@ -108,20 +84,10 @@
         background-size: cover;
         width: rem(64);
         height: rem(64);
+        background-image: url(../images/common/camera_white.png);
     }
 }
 
-.tab__button--whale.is-active::before {
-    background-image: url(../images/common/whale-white.png);
-}
-
-.tab__button--shark.is-active::before {
-    background-image: url(../images/common/shark-white.png);
-}
-
-.tab__button--small-fish.is-active::before {
-    background-image: url(../images/common/small-fish-white.png);
-}
 
 .tab__contents {
     margin-top: rem(16);

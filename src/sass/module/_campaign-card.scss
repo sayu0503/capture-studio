@@ -103,10 +103,6 @@
     justify-content: center;
     margin-top: rem(8);
     gap: rem(16);
-
-    @include mq(md) {
-        gap: rem(44);
-    }
 }
 
 .campaign-card__first-price {

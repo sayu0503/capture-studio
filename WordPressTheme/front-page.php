@@ -272,8 +272,7 @@
         <h2 class="section-header__subtitle">お客様の声</h2>
       </div>
     </div>
-    
-    
+
     <div class="voice__contents">
       <div class="voice-cards">
         <?php

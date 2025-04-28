@@ -107,10 +107,32 @@
                                                 <div class="sidebar__campaign-card__title"><?php the_title(); ?></div>
                                                 <div class="sidebar__campaign-card__wrap">
                                                     <div class="sidebar__campaign-card__text">全部コミコミ(お一人様)</div>
-                                                    <div class="sidebar__campaign-card__price">
-                                                        <p class="sidebar__campaign-card__first-price"><?php the_field('first_price'); ?></p>
-                                                        <p class="sidebar__campaign-card__second-price"><?php the_field('second_price'); ?></p>
-                                                    </div>
+                                                    <?php
+                            // グループフィールド「campaign_price」を取得
+                            $campaign_price = get_field('campaign_price');
+
+                            if ($campaign_price) {
+                                // 通常価格と割引価格を取得
+                                $first_price = $campaign_price['first_price'] ?? '';    // 通常価格
+                                $second_price = $campaign_price['second_price'] ?? '';  // 割引価格
+
+                                // 割引価格がある場合
+                                if (!empty($second_price)) {
+                                    ?>
+                                    <div class="campaign-card__price">
+                                        <?php if (!empty($first_price)) { ?>
+                                            <!-- 通常価格と割引価格を表示 -->
+                                            <p class="campaign-card__first-price"><?php echo esc_html($first_price); ?></p>
+                                            <p class="campaign-card__second-price campaign-card__second-price--layout"><?php echo esc_html($second_price); ?></p>
+                                        <?php } else { ?>
+                                            <!-- 割引価格のみ表示 -->
+                                            <p class="campaign-card__second-price"><?php echo esc_html($second_price); ?></p>
+                                        <?php } ?>
+                                    </div>
+                                    <?php
+                                }
+                            }
+                            ?>
                                                 </div>
                                             </div>
                                         </div>
