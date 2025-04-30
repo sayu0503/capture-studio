@@ -10,10 +10,10 @@
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    width: rem(120);
-    height: rem(55);
-    top: rem(-24);
-    left: calc(50% - min(48vw, rem(173)));
+    width: rem(80);
+    height: rem(85);
+    top: rem(-45);
+    left: calc(50% - min(48vw, rem(400)));
     z-index: -1;
 
     @include mq(md) {

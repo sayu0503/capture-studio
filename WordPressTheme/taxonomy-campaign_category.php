@@ -64,7 +64,7 @@
                     <?php if ( have_posts() ) : ?>
                 <?php while ( have_posts() ) : the_post(); ?>
                 <div class="page-campaign__item" id="page-campaign__item01">
-                        <div class="campaign-card">
+                        <div class="campaign-card js-fadeUp">
                         <figure class="campaign-card__img">
                                                 <?php if ( has_post_thumbnail() ) : ?>
                             <img src="<?php echo get_the_post_thumbnail_url( null, 'full' ); ?>" alt="<?php the_title_attribute(); ?>のアイキャッチ画像">
@@ -116,8 +116,27 @@
                                 <p class="campaign-card__text-item">
                                 <?php the_content(); ?>
                                 <div class="campaign-card__meta">
-                                <time class="campaign-card__date"><?php the_field('discount_start_date'); ?></time><span>-</span><time
-                                    class="campaign-card__date"><?php the_field('discount_end_date'); ?></time>
+                                <?php
+                                    // グループフィールド「discount_date」を取得
+                                    $discount_date = get_field('discount_date');
+
+                                    if ($discount_date) {
+                                        // 割引期間の初日と最終日を取得
+                                        $start_date = $discount_date['discount_start_date'] ?? '';  // 初日
+                                        $end_date = $discount_date['discount_end_date'] ?? '';      // 最終日
+
+                                        // 両方が存在する場合のみ表示
+                                        if (!empty($start_date) && !empty($end_date)) {
+                                            ?>
+                                            <div class="campaign-card__date-range">
+                                                <time class="campaign-card__date"><?php echo esc_html($start_date); ?></time>
+                                                <span> - </span>
+                                                <time class="campaign-card__date"><?php echo esc_html($end_date); ?></time>
+                                            </div>
+                                            <?php
+                                        }
+                                    }
+                                    ?>
                                 <p class="campaign-card__comment">ご予約・お問い合わせはコチラ</p>
                                 </div>
                                 <div class="campaign-card__apply">

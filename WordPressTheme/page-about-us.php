@@ -1,4 +1,11 @@
+
 <?php get_header(); ?>
+<!-- モーダルはセクションの外に！ -->
+<div class="modal js-modal">
+    <div class="modal__img">
+        <img src="" alt="拡大写真" class="modal__img js-modal-img">
+    </div>
+</div>
 <main>
     <!-- 下層メインビュー -->
     <div class="sub-mv" id="js-mv">
@@ -20,7 +27,7 @@
     <?php get_template_part('parts/breadcrumb')?>
 
 <!-- 下層About us -->
-<div class="layout-about page-about">
+<div class="layout-about page-about js-fadeUp">
     <div class="page-about__inner inner">
         <div class="about__body about__body--offset">
             <div class="about__image-container about__image-container--layout">
@@ -39,7 +46,7 @@
                         width="194" height="388">
                 </picture>
             </div>
-            <div class="about__text-group about__text-group">
+            <div class="about__text-group">
                 <p class="about__title about__title--absolute">We Snap<br>Moments</p>
                 <div class="about__group">
                     <p class="about__text about__text--layout">こカメラを初めて手にする方も、もっと上手になりたい方も。私たちの写真教室は、一人ひとりのペースや目的に合わせて、丁寧にサポートします。<br>
@@ -81,23 +88,19 @@ if (!empty($valid_images)) : ?>
             <p class="section-header__title section-header__title--line-height">Gallery</p>
             <h2 class="section-header__subtitle section-header__subtitle--layout">受講後に撮影された写真をご紹介</h2>
         </div>
+
         <div class="gallery__contents">
             <?php foreach ($valid_images as $image) : ?>
-                <div class="gallery__image js-modal-open">
+                <div class="gallery__image js-modal-open js-fadeUp">
                     <img src="<?php echo esc_url($image['url']); ?>" alt="<?php echo $image['alt']; ?>" decoding="async" loading="lazy">
                 </div>
             <?php endforeach; ?>
-
-            <!-- モーダル -->
-            <div class="modal js-modal">
-                <div class="modal__image">
-                    <img src="" alt="拡大写真" class="modal__img js-modal-img">
-                </div>
-            </div>
         </div>
     </div>
 </section>
 <?php endif; ?>
+
+
 
 
 <?php get_footer(); ?>

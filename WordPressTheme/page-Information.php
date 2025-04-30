@@ -24,13 +24,13 @@
     <!-- 下層 Information -->
     <section class="layout-information page-information">
         <div class="page-information__inner inner">
-            <div class="page-information__tab tab">
+            <div class="page-information__tab tab js-fadeUp">
                 <div class="tab__list">
                     <button class="tab__button tab__button--camera js-tab-button is-active">カメラ体験</button>
                     <button class="tab__button tab__button--camera js-tab-button">ステップアップ</button>
                     <button class="tab__button tab__button--camera js-tab-button">ポートレート</button>
                 </div>
-                <div class="tab__contents">
+                <div class="tab__contents js-fadeUp">
                     <div class="tab__content js-tab-content is-active" id="tab__content01">
                         <div class="tab__text-block">
                             <h2 class="tab__title">カメラ体験</h2>

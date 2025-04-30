@@ -39,7 +39,7 @@
             }
             if ($has_data) :
         ?>
-        <div class="page-price__group" id="page-price__group01">
+        <div class="page-price__group js-fadeUp" id="page-price__group01">
             <h2 class="page-price__title">
                 <?= esc_html(SCF::get('license_title')) ?: 'ライセンス講習'; ?>
             </h2>
@@ -84,7 +84,7 @@
       if ($has_experience) :
       ?>
       <!-- セクション2：体験ダイビング -->
-      <div class="page-price__group" id="page-price__group02">
+      <div class="page-price__group js-fadeUp" id="page-price__group02">
           <h2 class="page-price__title">
               <?= esc_html(SCF::get('experience_title')) ?: '体験ダイビング'; ?>
           </h2>
@@ -128,7 +128,7 @@
         if ($has_fundiving) :
         ?>
         <!-- セクション3：ファンダイビング -->
-        <div class="page-price__group" id="page-price__group03">
+        <div class="page-price__group js-fadeUp" id="page-price__group03">
             <h2 class="page-price__title">
                 <?= esc_html(SCF::get('fundiving_title')) ?: 'ファンダイビング'; ?>
             </h2>
@@ -173,7 +173,7 @@
             if ($has_specialdiving) :
             ?>
             <!-- セクション4：スペシャルダイビング -->
-            <div class="page-price__group" id="page-price__group04">
+            <div class="page-price__group js-fadeUp" id="page-price__group04">
                 <h2 class="page-price__title">
                     <?= esc_html(SCF::get('specialdiving_title')) ?: 'スペシャルダイビング'; ?>
                 </h2>

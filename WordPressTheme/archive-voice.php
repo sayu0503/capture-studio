@@ -58,7 +58,7 @@
           <div class="voice-cards voice-cards--layout">
           <?php if ( have_posts() ) : ?>
            <?php while ( have_posts() ) : the_post(); ?>
-           <div class="page-voice-cards__item voice-card">
+           <div class="page-voice-cards__item voice-card js-fadeUp">
               <div class="voice-card__body">
                 <div class="voice-card__container">
                   <div class="voice-card__wrap">

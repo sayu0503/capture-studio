@@ -175,13 +175,23 @@ box.each(function () {
 
 //モーダルウィンドウ
 $(".js-modal-open").on("click", function () {
-  var imgSrc = $(this).find("img").attr("src");
-  $(".js-modal-img").attr("src", imgSrc);
+  var img = $(this).find("img");
+  var imgSrc = img.attr("src");
+  var altText = img.attr("alt");
+  var modalImg = $(".js-modal-img");
+
+  // 画像ロードイベントの重複を避ける
+  modalImg.hide().off("load").attr("src", imgSrc).attr("alt", altText).removeClass("modal__img--landscape modal__img--portrait");
+  modalImg.on("load", function () {
+    var isLandscape = this.naturalWidth > this.naturalHeight;
+    modalImg.addClass(isLandscape ? "modal__img--landscape" : "modal__img--portrait");
+    modalImg.show();
+  });
   $(".js-modal").addClass("is-open");
   $("body").addClass("no-scroll");
 });
 $(".js-modal").on("click", function (e) {
-  if (!$(e.target).closest(".js-modal-img").length) {
+  if (e.target === this) {
     $(this).removeClass("is-open");
     $("body").removeClass("no-scroll");
   }
@@ -288,4 +298,18 @@ jQuery(document).ready(function ($) {
       }
     }, 300);
   }
+});
+
+// スクロールして表示領域に入ったらclass付与
+$(function () {
+  $(".js-fadeUp").on("inview", function () {
+    $(this).addClass("is-inview");
+  });
+});
+
+// 左からフェードイン用
+$(function () {
+  $(".js-fadeLeft").on("inview", function () {
+    $(this).addClass("inview");
+  });
 });

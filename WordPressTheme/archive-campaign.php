@@ -63,7 +63,7 @@
                 $post_slug = get_post_field('post_name', get_the_ID());
             ?>
                 <div class="page-campaign__item" id="page-campaign-<?php echo esc_attr($post_slug); ?>">
-                        <div class="campaign-card">
+                        <div class="campaign-card js-fadeUp">
                         <figure class="campaign-card__img">
                                                 <?php if ( has_post_thumbnail() ) : ?>
                             <img src="<?php echo get_the_post_thumbnail_url( null, 'full' ); ?>" alt="<?php the_title_attribute(); ?>のアイキャッチ画像">

@@ -1,7 +1,7 @@
 
-    <aside class="sidebar">
+    <aside class="sidebar js-fadeLeft">
                     <div class="sidebar__items">
-                        <div class="sidebar__item">
+                        <div class="sidebar__item ">
                             <h2 class="sidebar__title">人気記事</h2>
                             <div class="sidebar__article">
                             <?php

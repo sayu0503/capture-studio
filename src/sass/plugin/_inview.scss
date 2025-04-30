@@ -1,0 +1,27 @@
+@use "global" as *;
+
+.js-fadeUp {
+    opacity: 0;
+    transform: translateY(30px);
+    transition: opacity .8s, transform .8s;
+  }
+
+  .js-fadeUp.is-inview {
+    opacity: 1;
+    transform: translateY(0);
+    transition-delay: .3s;
+  }
+
+
+  // 左からフェードイン
+.js-fadeLeft {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(80px);
+    transition: opacity 1s,visibility 1s, transform 1s;
+}
+.js-fadeLeft.inview {
+    opacity: 1;
+    visibility: visible;
+    transform: translateX(0px);
+}

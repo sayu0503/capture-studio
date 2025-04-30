@@ -27,7 +27,7 @@
                     <div class="blog-cards blog-cards--layout">
                     <?php if ( have_posts() ) : ?>
                        <?php while ( have_posts() ) : the_post(); ?>
-                       <a href="<?php the_permalink(); ?>" class="blog-cards__item blog-card">
+                       <a href="<?php the_permalink(); ?>" class="blog-cards__item blog-card js-fadeUp">
                             <figure class="blog-card__img">
                             <?php if ( has_post_thumbnail() ) : ?>
                                     <img src="<?php echo get_the_post_thumbnail_url( null, 'full' ); ?>" alt="<?php the_title_attribute(); ?>のアイキャッチ画像">

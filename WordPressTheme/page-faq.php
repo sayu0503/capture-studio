@@ -35,7 +35,7 @@
           // 質問と答えが両方存在する場合のみ表示
           if ($question && $answer) :
       ?>
-          <dl class="accordion__item">
+          <dl class="accordion__item js-fadeUp">
             <dt class="accordion__header"><?php echo $question; ?></dt>
             <dd class="accordion__content"><?php echo $answer; ?></dd>
           </dl>

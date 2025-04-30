@@ -151,7 +151,7 @@
             <h2 class="section-header__subtitle">私たちについて</h2>
           </div>
         </div>
-        <div class="about__body">
+        <div class="about__body js-fadeUp">
           <div class="about__image-container">
             <picture>
               <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img_2.jpg" media="(min-width: 768px)" width="1760" height="1162">
@@ -229,7 +229,7 @@
 
         <?php if ($blog_query->have_posts()): ?>
           <?php while ($blog_query->have_posts()): $blog_query->the_post(); ?>
-            <a href="<?php the_permalink(); ?>" class="blog-cards__item blog-card">
+            <a href="<?php the_permalink(); ?>" class="blog-cards__item blog-card js-fadeUp">
               <figure class="blog-card__img">
                 <?php if (has_post_thumbnail()): ?>
                   <img src="<?php echo get_the_post_thumbnail_url(get_the_ID(), 'full'); ?>" alt="<?php the_title_attribute(); ?>" decoding="async" loading="lazy">
