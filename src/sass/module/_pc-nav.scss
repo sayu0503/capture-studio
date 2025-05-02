@@ -19,7 +19,7 @@
     height: inherit;
     font-family: $third-font-family;
     font-weight: $regular;
-    font-size: rem(18);
+    font-size: clamp(10px, 1vw, 18px);
     color: $white;
     padding: 0;
     line-height: calc(18/18);

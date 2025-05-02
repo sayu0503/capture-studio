@@ -124,7 +124,7 @@ $(function () {
     if (scrollHeight - scrollPosition <= footHeight) {
       $(".js-page-top").css({
         "position": "absolute",
-        "bottom": 16 + footHeight,
+        "bottom": 20 + footHeight,
       });
     } else {
       $(".js-page-top").css({
@@ -157,7 +157,7 @@ box.each(function () {
   });
 });
 
-//モーダルウィンドウ
+// モーダルを開く
 $(".js-modal-open").on("click", function () {
   const img = $(this).find("img");
   const imgSrc = img.attr("src");
@@ -165,7 +165,7 @@ $(".js-modal-open").on("click", function () {
 
   const modalImg = $(".js-modal-img");
 
-  // 画像ロードイベントの重複を避ける
+  // loadイベントの重複を防ぐ
   modalImg.hide().off("load").attr("src", imgSrc).attr("alt", altText).removeClass("modal__img--landscape modal__img--portrait");
 
   modalImg.on("load", function () {
@@ -178,9 +178,10 @@ $(".js-modal-open").on("click", function () {
   $("body").addClass("no-scroll");
 });
 
-$(".js-modal").on("click", function (e) {
-  if (e.target === this) {
-    $(this).removeClass("is-open");
+// 背景クリック or 閉じるボタンでモーダルを閉じる
+$(".js-modal, .js-modal-close").on("click", function (e) {
+  if ($(e.target).hasClass("js-modal") || $(e.target).hasClass("js-modal-close")) {
+    $(".js-modal").removeClass("is-open");
     $("body").removeClass("no-scroll");
   }
 });

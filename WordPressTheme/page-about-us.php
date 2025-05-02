@@ -2,7 +2,8 @@
 <?php get_header(); ?>
 <!-- モーダルはセクションの外に！ -->
 <div class="modal js-modal">
-    <div class="modal__img">
+
+    <div class="modal__img"><button class="modal__close js-modal-close" aria-label="モーダルを閉じる">×</button>
         <img src="" alt="拡大写真" class="modal__img js-modal-img">
     </div>
 </div>

@@ -401,6 +401,7 @@ a {
 	line-height: 1.4375;
 	padding-bottom: 1rem;
 	padding-left: 1rem;
+	padding-right: 2.5rem;
 	padding-top: 1rem;
 	position: relative;
 }
@@ -1317,7 +1318,7 @@ div.colorbox img {
 }
 
 .footer-nav__title--color::before {
-	background-image: url(../images/common/hitode-black.png);
+	background-image: url(../images/common/leaf-blue.png);
 	background-size: contain;
 	content: "";
 	display: inline-block;
@@ -1412,6 +1413,11 @@ div.colorbox img {
 	margin-top: 2.5rem;
 }
 
+.gallery__image {
+	overflow: hidden;
+	position: relative;
+}
+
 .gallery__contents img {
 	-o-object-fit: cover;
 	height: 100%;
@@ -1419,12 +1425,13 @@ div.colorbox img {
 	width: 100%;
 }
 
-.gallery__image {
-	transition: 0.3s;
+.gallery__image img {
+	transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
-.gallery__image:hover {
-	opacity: 0.6;
+.gallery__image:hover img {
+	opacity: 0.7;
+	transform: scale(1.05);
 }
 
 .hamburger {
@@ -1633,6 +1640,23 @@ div.colorbox img {
 	overflow: hidden;
 }
 
+.modal__close {
+	background: transparent;
+	border: none;
+	color: #fff;
+	cursor: pointer;
+	font-size: 2rem;
+	position: absolute;
+	right: 1.25rem;
+	top: 1.25rem;
+	transition: opacity ease 0.3s;
+	z-index: 2100;
+}
+
+.modal__close:hover {
+	opacity: 0.7;
+}
+
 .mv {
 	height: 100vh;
 	height: 100svh;
@@ -1681,7 +1705,7 @@ div.colorbox img {
 }
 
 .page-404::before {
-	background-image: url(../images/common/whale-big.png);
+	background-image: url(../images/common/camera_blue.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	content: "";
@@ -1814,15 +1838,15 @@ body#top.blog.wp-theme-WordPressTheme::after {
 }
 
 .page-contact::before {
-	background-image: url(../images/common/fish_2.png);
+	background-image: url(../images/common/watage.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	content: "";
-	height: 3.4375rem;
-	left: calc(50% - min(48vw, 19.25rem));
+	height: 4.375rem;
+	left: calc(50% - min(48vw, 21.875rem));
 	position: absolute;
-	top: -1.4375rem;
-	width: 7.5rem;
+	top: -3.625rem;
+	width: 4.375rem;
 	z-index: -1;
 }
 
@@ -2047,15 +2071,15 @@ span.wpcf7-list-item {
 }
 
 .page-faq::before {
-	background-image: url(../images/common/fish_2.png);
+	background-image: url(../images/common/watage.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	content: "";
-	height: 3.4375rem;
-	left: calc(50% - min(48vw, 10.8125rem));
+	height: 4.375rem;
+	left: calc(50% - min(48vw, 21.875rem));
 	position: absolute;
-	top: -1.4375rem;
-	width: 7.5rem;
+	top: -3.75rem;
+	width: 4.375rem;
 	z-index: -1;
 }
 
@@ -2086,15 +2110,15 @@ span.wpcf7-list-item {
 }
 
 .page-price::before {
-	background-image: url(../images/common/fish_2.png);
+	background-image: url(../images/common/watage.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	content: "";
-	height: 3.4375rem;
-	left: calc(50% - min(48vw, 19.25rem));
+	height: 4.375rem;
+	left: calc(50% - min(48vw, 21.875rem));
 	position: absolute;
-	top: -1.5625rem;
-	width: 7.5rem;
+	top: -2.5rem;
+	width: 4.375rem;
 	z-index: -1;
 }
 
@@ -2129,7 +2153,7 @@ span.wpcf7-list-item {
 }
 
 .page-price__title::before {
-	background-image: url(../images/common/whale-white.png);
+	background-image: url(../images/common/camera_white.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	content: "";
@@ -2178,15 +2202,15 @@ span.wpcf7-list-item {
 }
 
 .page-privacy::before {
-	background-image: url(../images/common/fish_2.png);
+	background-image: url(../images/common/watage.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	content: "";
-	height: 3.4375rem;
-	left: calc(50% - min(48vw, 19.25rem));
+	height: 4.375rem;
+	left: calc(50% - min(48vw, 21.875rem));
 	position: absolute;
-	top: -1.4375rem;
-	width: 7.5rem;
+	top: -3.625rem;
+	width: 4.375rem;
 	z-index: -1;
 }
 
@@ -2253,15 +2277,15 @@ span.wpcf7-list-item {
 }
 
 .page-sitemap::before {
-	background-image: url(../images/common/fish_2.png);
+	background-image: url(../images/common/watage.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	content: "";
-	height: 3.4375rem;
-	left: calc(50% - min(48vw, 10.75rem));
+	height: 4.375rem;
+	left: calc(50% - min(48vw, 21.875rem));
 	position: absolute;
-	top: -1.5rem;
-	width: 7.5rem;
+	top: -3.625rem;
+	width: 4.375rem;
 	z-index: -1;
 }
 
@@ -2270,15 +2294,15 @@ span.wpcf7-list-item {
 }
 
 .page-terms::before {
-	background-image: url(../images/common/fish_2.png);
+	background-image: url(../images/common/watage.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	content: "";
-	height: 3.4375rem;
-	left: calc(50% - min(48vw, 19.25rem));
+	height: 4.375rem;
+	left: calc(50% - min(48vw, 21.875rem));
 	position: absolute;
-	top: -1.4375rem;
-	width: 7.5rem;
+	top: -3.625rem;
+	width: 4.375rem;
 	z-index: -1;
 }
 
@@ -2349,15 +2373,15 @@ span.wpcf7-list-item {
 }
 
 .page-thanks::before {
-	background-image: url(../images/common/fish_2.png);
+	background-image: url(../images/common/watage.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	content: "";
-	height: 3.4375rem;
-	left: calc(50% - min(48vw, 10.8125rem));
+	height: 4.375rem;
+	left: calc(50% - min(48vw, 21.875rem));
 	position: absolute;
-	top: -1.375rem;
-	width: 7.5rem;
+	top: -3.625rem;
+	width: 4.375rem;
 	z-index: -1;
 }
 
@@ -2416,15 +2440,15 @@ span.wpcf7-list-item {
 }
 
 .page-voice::before {
-	background-image: url(../images/common/fish_2.png);
+	background-image: url(../images/common/watage.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	content: "";
-	height: 3.4375rem;
-	left: calc(50% - min(48vw, 19.25rem));
+	height: 4.375rem;
+	left: calc(50% - min(48vw, 21.875rem));
 	position: absolute;
-	top: -1.875rem;
-	width: 7.5rem;
+	top: -2.5rem;
+	width: 4.375rem;
 	z-index: -1;
 }
 
@@ -2530,7 +2554,7 @@ span.wpcf7-list-item {
 	display: flex;
 	flex-direction: column;
 	font-family: "Gotu", sans-serif;
-	font-size: 1.125rem;
+	font-size: max(10px, min(1vw, 18px));
 	font-weight: 400;
 	height: inherit;
 	justify-content: center;
@@ -2681,7 +2705,7 @@ span.wpcf7-list-item {
 }
 
 .sidebar__title::before {
-	background-image: url(../images/common/whale-dot.png);
+	background-image: url(../images/common/camera_blue.png);
 	background-repeat: no-repeat;
 	background-size: cover;
 	content: "";
@@ -4192,8 +4216,13 @@ html {
 }
 
 .header__pc-nav {
-	display: block;
+	align-items: center;
+	display: flex;
+	flex-shrink: 1;
+	gap: 1.25rem;
 	height: inherit;
+	justify-content: flex-end;
+	min-width: 0;
 }
 
 .header__title {
@@ -4288,10 +4317,10 @@ html {
 }
 
 .page-about::before {
-	height: 12.5rem;
+	height: 9.375rem;
 	left: calc(50% - min(48vw, 37.5rem));
 	top: -7.5rem;
-	width: 12.5rem;
+	width: 9.375rem;
 }
 
 .page-blog::before {
@@ -4317,10 +4346,10 @@ html {
 }
 
 .page-campaign::before {
-	height: 12.5rem;
+	height: 9.375rem;
 	left: calc(50% - min(48vw, 38.8125rem));
 	top: -9.375rem;
-	width: 12.5rem;
+	width: 9.375rem;
 }
 
 .page-campaign__items {
@@ -4335,10 +4364,10 @@ html {
 }
 
 .page-contact::before {
-	height: 8.625rem;
-	left: calc(50% - min(48vw, 38.6875rem));
-	top: -2.1875rem;
-	width: 18.8125rem;
+	height: 9.375rem;
+	left: calc(50% - min(48vw, 31.25rem));
+	top: -8.75rem;
+	width: 9.375rem;
 }
 
 .page-contact__inner.inner {
@@ -4425,10 +4454,10 @@ html {
 }
 
 .page-faq::before {
-	height: 8.625rem;
-	left: calc(50% - min(48vw, 38.8125rem));
-	top: -4.375rem;
-	width: 18.8125rem;
+	height: 9.375rem;
+	left: calc(50% - min(48vw, 30rem));
+	top: -9.375rem;
+	width: 9.375rem;
 }
 
 .page-faq__inner.inner {
@@ -4436,17 +4465,17 @@ html {
 }
 
 .page-information::before {
-	height: 12.5rem;
+	height: 9.375rem;
 	left: calc(50% - min(48vw, 37.5rem));
 	top: -9.375rem;
-	width: 12.5rem;
+	width: 9.375rem;
 }
 
 .page-price::before {
-	height: 8.625rem;
-	left: calc(50% - min(48vw, 38.6875rem));
-	top: -4.75rem;
-	width: 18.8125rem;
+	height: 9.375rem;
+	left: calc(50% - min(48vw, 28.125rem));
+	top: -9.375rem;
+	width: 9.375rem;
 }
 
 .page-price__inner.inner {
@@ -4489,10 +4518,10 @@ html {
 }
 
 .page-privacy::before {
-	height: 8.625rem;
-	left: calc(50% - min(48vw, 38.6875rem));
-	top: -5.75rem;
-	width: 18.8125rem;
+	height: 9.375rem;
+	left: calc(50% - min(48vw, 31.25rem));
+	top: -8.75rem;
+	width: 9.375rem;
 }
 
 .page-privacy__heading {
@@ -4507,17 +4536,17 @@ html {
 }
 
 .page-sitemap::before {
-	height: 8.625rem;
-	left: calc(50% - min(48vw, 50rem));
-	top: -6.4375rem;
-	width: 18.8125rem;
+	height: 9.375rem;
+	left: calc(50% - min(48vw, 40.625rem));
+	top: -8.75rem;
+	width: 9.375rem;
 }
 
 .page-terms::before {
-	height: 8.625rem;
-	left: calc(50% - min(48vw, 38.6875rem));
-	top: -4.4375rem;
-	width: 18.8125rem;
+	height: 9.375rem;
+	left: calc(50% - min(48vw, 31.25rem));
+	top: -8.75rem;
+	width: 9.375rem;
 }
 
 .page-terms__heading {
@@ -4532,10 +4561,10 @@ html {
 }
 
 .page-thanks::before {
-	height: 8.625rem;
-	left: calc(50% - min(48vw, 38.8125rem));
-	top: -4.375rem;
-	width: 18.8125rem;
+	height: 9.375rem;
+	left: calc(50% - min(48vw, 28.125rem));
+	top: -8.75rem;
+	width: 9.375rem;
 }
 
 .page-top-button {
@@ -4552,10 +4581,10 @@ html {
 }
 
 .page-voice::before {
-	height: 8.625rem;
-	left: calc(50% - min(48vw, 38.8125rem));
-	top: -4.375rem;
-	width: 18.8125rem;
+	height: 9.375rem;
+	left: calc(50% - min(48vw, 37.5rem));
+	top: -9.375rem;
+	width: 9.375rem;
 }
 
 .wp-pagenavi--gap {

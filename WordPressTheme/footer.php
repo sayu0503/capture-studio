@@ -83,10 +83,9 @@
                     </ul>
                     <ul class="footer-nav__wrapper">
                       <li class="footer-nav__title">
-                        <a href="<?php echo esc_url(home_url("/information")) ?>">写真教室</a>
+                        <a href="<?php echo esc_url(home_url("/information")) ?>">コース紹介</a>
                       </li>
                     </ul>
-                   
                   </div>
                   <div class="footer-nav__group">
                   <ul class="footer-nav__wrapper">

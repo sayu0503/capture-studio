@@ -347,10 +347,9 @@
 
         // セクション情報
         $sections = [
-            'license'       => ['group' => 'license_group', 'title' => 'ライセンス講習', 'course' => 'license_course', 'price' => 'license_price'],
-            'experience'    => ['group' => 'experience_group', 'title' => '体験ダイビング', 'course' => 'experience_course', 'price' => 'experience_price'],
-            'fundiving'     => ['group' => 'fundiving_group', 'title' => 'ファンダイビング', 'course' => 'fundiving_course', 'price' => 'fundiving_price'],
-            'specialdiving' => ['group' => 'specialdiving_group', 'title' => 'スペシャルダイビング', 'course' => 'specialdiving_course', 'price' => 'specialdiving_price']
+            'camera'       => ['group' => 'camera_group', 'title' => 'ライセンス講習', 'course' => 'camera_course', 'price' => 'camera_price'],
+            'stepUp'    => ['group' => 'stepUp_group', 'title' => '体験ダイビング', 'course' => 'stepUp_course', 'price' => 'stepUp_price'],
+            'portrait'     => ['group' => 'portrait_group', 'title' => 'ファンダイビング', 'course' => 'portrait_course', 'price' => 'portrait_price']
         ];
 
         $section_count = 0;

@@ -6,7 +6,7 @@
           <div class="sub-mv__image">
             <picture>
               <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/other_mv.jpg" media="(min-width: 768px)" width="1440" height="548">
-              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/other_mv_sp.jpg" alt="イソギンチャクと魚の群" decoding="async" width="375" height="460">
+              <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/other_mv_sp.jpg" alt="夕暮れ時に海辺とカメラ" decoding="async" width="375" height="460">
             </picture>
           </div>
           <div class="sub-mv__title">
@@ -40,7 +40,7 @@
                         </ul>
                         <ul class="footer-nav__wrapper">
                           <li class="footer-nav__title footer-nav__title--color">
-                            <a href="<?php echo esc_url(home_url("/information")) ?>">ダイビング情報</a>
+                            <a href="<?php echo esc_url(home_url("/information")) ?>">コース紹介</a>
                           </li>
                         </ul>
                       </div>

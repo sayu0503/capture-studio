@@ -18,8 +18,8 @@
     z-index: 2;
 
     @include mq(md) {
-        width: rem(200);
-        height: rem(200);
+        width: rem(150);
+        height: rem(150);
         top: rem(-120);
         left: calc(50% - min(48vw, rem(600)));
     }

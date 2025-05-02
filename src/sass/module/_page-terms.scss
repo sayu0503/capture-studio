@@ -6,21 +6,21 @@
 
 .page-terms::before {
     content: "";
-    background-image: url(../images/common/fish_2.png);
+    background-image: url(../images/common/watage.png);
     background-repeat: no-repeat;
     background-size: cover;
     position: absolute;
-    width: rem(120);
-    height: rem(55);
-    top: rem(-23);
-    left: calc(50% - min(48vw, rem(308)));
+    width: rem(70);
+    height: rem(70);
+    top: rem(-58);
+    left: calc(50% - min(48vw, rem(350)));
     z-index: -1;
 
     @include mq(md) {
-        width: rem(301);
-        height: rem(138);
-        top: rem(-71);
-        left: calc(50% - min(48vw, rem(619)));
+        width: rem(150);
+        height: rem(150);
+        top: rem(-140);
+        left: calc(50% - min(48vw, rem(500)));
     }
 }
 

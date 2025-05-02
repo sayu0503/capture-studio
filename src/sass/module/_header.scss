@@ -48,8 +48,13 @@
     display: none;
 
     @include mq(md) {
-        height: inherit;
-        display: block;
+        display: flex; // ✅ blockからflexへ変更し、横並び制御しやすく
+    align-items: center;
+    justify-content: flex-end;
+    gap: rem(20); // ナビ間のスペース
+    flex-shrink: 1; // ✅ 縮小を許可
+    min-width: 0; // ✅ 折り返し防止
+    height: inherit;
     }
 }
 

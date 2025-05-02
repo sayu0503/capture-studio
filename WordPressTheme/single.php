@@ -22,7 +22,7 @@
         <?php while (have_posts()) : the_post(); ?>
 
             <!-- 下層 Blog -->
-            <section class="layout-blog page-blog js-fadeUp">
+            <section class="layout-blog page-blog">
                 <div class="page-blog__inner inner">
                     <div class="page-blog__contents">
                         <div class="page-blog__wrapper">

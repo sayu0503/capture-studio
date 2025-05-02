@@ -7,7 +7,7 @@
         <div class="sub-mv__image">
           <picture>
             <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/contact_mv.jpg" media="(min-width: 768px)" width="1440" height="548">
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/contact_mv_sp.jpg" alt="波打際" decoding="async" width="375" height="460">
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/contact_mv_sp.jpg" alt="緑の中カメラを持つ手" decoding="async" width="375" height="460">
           </picture>
         </div>
         <div class="sub-mv__title">

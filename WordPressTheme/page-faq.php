@@ -7,7 +7,7 @@
     <div class="sub-mv__image">
       <picture>
         <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/faq_mv.jpg" media="(min-width: 768px)" width="1440" height="548">
-        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/faq_mv_sp.jpg" alt="ビーチ" decoding="async" width="375" height="460">
+        <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/faq_mv_sp.jpg" alt="カメラの前でバンザイするレゴの人形たち" decoding="async" width="375" height="460">
       </picture>
     </div>
     <div class="sub-mv__title">
@@ -35,7 +35,7 @@
           // 質問と答えが両方存在する場合のみ表示
           if ($question && $answer) :
       ?>
-          <dl class="accordion__item js-fadeUp">
+          <dl class="accordion__item">
             <dt class="accordion__header"><?php echo $question; ?></dt>
             <dd class="accordion__content"><?php echo $answer; ?></dd>
           </dl>

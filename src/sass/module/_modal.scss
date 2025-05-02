@@ -51,3 +51,20 @@
   overflow: hidden;
   height: 100vh;
 }
+
+.modal__close {
+  position: absolute;
+  top: rem(20);
+  right: rem(20);
+  background: transparent;
+  border: none;
+  font-size: rem(32);
+  color: $white;
+  cursor: pointer;
+  z-index: 2100;
+  transition: opacity ease 0.3s;
+}
+
+.modal__close:hover {
+  opacity: 0.7;
+}
