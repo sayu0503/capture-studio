@@ -8,7 +8,7 @@
                 <picture>
                     <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/information_mv.jpg" media="(min-width: 768px)" width="1440"
                         height="548">
-                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/information_mv_sp.jpg" alt="黄色い熱帯魚が2匹泳いでいる様子" decoding="async" width="375"
+                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/information_mv_sp.jpg" alt="海辺に咲く紫の花と夕日" decoding="async" width="375"
                         height="460">
                 </picture>
             </div>
@@ -27,7 +27,7 @@
             <div class="page-information__tab tab js-fadeUp">
                 <div class="tab__list">
                     <button class="tab__button tab__button--camera js-tab-button is-active">カメラ体験</button>
-                    <button class="tab__button tab__button--camera js-tab-button">ステップアップ</button>
+                    <button class="tab__button tab__button--camera js-tab-button">ステップ<br class="u-mobile">アップ</button>
                     <button class="tab__button tab__button--camera js-tab-button">ポートレート</button>
                 </div>
                 <div class="tab__contents js-fadeUp">

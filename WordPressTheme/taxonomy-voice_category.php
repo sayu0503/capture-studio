@@ -6,7 +6,7 @@
         <div class="sub-mv__image">
           <picture>
             <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice_mv.jpg" media="(min-width: 768px)" width="1440" height="548">
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice_mv_sp.jpg" alt="スキューバダイビング" decoding="async" width="375"
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/voice_mv_sp.jpg" alt="オレンジ色の手帳の上に乗ったカメラ" decoding="async" width="375"
               height="460">
           </picture>
         </div>

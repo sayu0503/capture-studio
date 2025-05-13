@@ -6,7 +6,7 @@
           <div class="contact__info">
             <div class="contact__info-inner">
               <div class="contact__info-title">
-                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/logo-blue.jpg" alt="CodeUps" decoding="async" loading="lazy"
+                <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/logo-blue.jpg" alt="capture-studio" decoding="async" loading="lazy"
                   width="400" height="60">
               </div>
               <div class="contact__info-container">

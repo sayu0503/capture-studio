@@ -401,7 +401,7 @@ a {
 	line-height: 1.4375;
 	padding-bottom: 1rem;
 	padding-left: 1rem;
-	padding-right: 2.5rem;
+	padding-right: 2.8125rem;
 	padding-top: 1rem;
 	position: relative;
 }
@@ -1764,7 +1764,7 @@ body.error404 {
 	height: 4.375rem;
 	left: calc(50% - min(48vw, 21.875rem));
 	position: absolute;
-	top: -2.5rem;
+	top: -3.4375rem;
 	width: 4.375rem;
 	z-index: 2;
 }
@@ -1782,11 +1782,7 @@ body.error404 {
 	background-repeat: no-repeat;
 	background-size: cover;
 	content: "";
-	height: 5.3125rem;
-	left: calc(50% - min(48vw, 25rem));
 	position: absolute;
-	top: -2.8125rem;
-	width: 5rem;
 	z-index: -1;
 }
 
@@ -1842,11 +1838,7 @@ body#top.blog.wp-theme-WordPressTheme::after {
 	background-repeat: no-repeat;
 	background-size: cover;
 	content: "";
-	height: 4.375rem;
-	left: calc(50% - min(48vw, 21.875rem));
 	position: absolute;
-	top: -3.625rem;
-	width: 4.375rem;
 	z-index: -1;
 }
 
@@ -2100,7 +2092,7 @@ span.wpcf7-list-item {
 	height: 4.375rem;
 	left: calc(50% - min(48vw, 21.875rem));
 	position: absolute;
-	top: -2.5rem;
+	top: -2.8125rem;
 	width: 4.375rem;
 	z-index: -1;
 }
@@ -2114,11 +2106,7 @@ span.wpcf7-list-item {
 	background-repeat: no-repeat;
 	background-size: cover;
 	content: "";
-	height: 4.375rem;
-	left: calc(50% - min(48vw, 21.875rem));
 	position: absolute;
-	top: -2.5rem;
-	width: 4.375rem;
 	z-index: -1;
 }
 
@@ -2281,11 +2269,7 @@ span.wpcf7-list-item {
 	background-repeat: no-repeat;
 	background-size: cover;
 	content: "";
-	height: 4.375rem;
-	left: calc(50% - min(48vw, 21.875rem));
 	position: absolute;
-	top: -3.625rem;
-	width: 4.375rem;
 	z-index: -1;
 }
 
@@ -2444,11 +2428,7 @@ span.wpcf7-list-item {
 	background-repeat: no-repeat;
 	background-size: cover;
 	content: "";
-	height: 4.375rem;
-	left: calc(50% - min(48vw, 21.875rem));
 	position: absolute;
-	top: -2.5rem;
-	width: 4.375rem;
 	z-index: -1;
 }
 
@@ -3086,7 +3066,7 @@ h3.wp-block-heading {
 
 .sp-nav__contents {
 	display: flex;
-	gap: 0.3125rem;
+	gap: 1.5625rem;
 }
 
 .sp-nav__flex {
@@ -4538,7 +4518,7 @@ html {
 .page-sitemap::before {
 	height: 9.375rem;
 	left: calc(50% - min(48vw, 40.625rem));
-	top: -8.75rem;
+	top: -9.375rem;
 	width: 9.375rem;
 }
 

@@ -14,7 +14,7 @@
         <div class="sub-mv__image">
           <picture>
             <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_mv.jpg" media="(min-width: 768px)" width="1440" height="548">
-            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_mv-sp.jpg" alt="黄色い熱帯魚が2匹泳いでいる様子" decoding="async" width="375"
+            <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_mv-sp.jpg" alt="一眼レフカメラ" decoding="async" width="375"
               height="460">
           </picture>
         </div>
@@ -35,7 +35,7 @@
                 <picture>
                     <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img_2.jpg" media="(min-width: 768px)" width="1760"
                         height="1162">
-                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img_2-sp.jpg" alt="黄色い二匹の魚が泳いでいる様子" decoding="async" loading="lazy"
+                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img_2-sp.jpg" alt="写真を取り合う生徒たち" decoding="async" loading="lazy"
                         width="562" height="372">
                 </picture>
             </div>
@@ -43,14 +43,14 @@
                 <picture>
                     <source srcset="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img_1-sp.jpg" media="(min-width: 768px)" width="1212"
                         height="800">
-                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img_1.jpg" alt="瓦屋根の上のシーサー" decoding="async" loading="lazy"
+                    <img src="<?php echo get_theme_file_uri(); ?>/assets/images/common/about_img_1.jpg" alt="カメラで画像を確認する女性" decoding="async" loading="lazy"
                         width="194" height="388">
                 </picture>
             </div>
             <div class="about__text-group">
                 <p class="about__title about__title--absolute">We Snap<br>Moments</p>
                 <div class="about__group">
-                    <p class="about__text about__text--layout">こカメラを初めて手にする方も、もっと上手になりたい方も。私たちの写真教室は、一人ひとりのペースや目的に合わせて、丁寧にサポートします。<br>
+                    <p class="about__text about__text--layout">カメラを初めて手にする方も、もっと上手になりたい方も。私たちの写真教室は、一人ひとりのペースや目的に合わせて、丁寧にサポートします。<br>
               「こんな風に撮ってみたかった！」<br>
                そんな気持ちを一緒にカタチにしていきましょう。
                     </p>

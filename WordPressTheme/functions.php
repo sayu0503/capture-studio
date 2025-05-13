@@ -223,10 +223,10 @@ add_filter('get_the_archive_title','custom_archive_title');
 function login_logo() {
     echo '<style type="text/css">
       #login h1 a {
-        background: url('.get_template_directory_uri().'/assets/images/common/logo-green.svg) no-repeat center;
+        background: url('.get_template_directory_uri().'/assets/images/common/logo-blue.png) no-repeat center;
         background-size: contain;
-        width: 266px;
-        height: 150px;
+        width: 320px;
+        height: 60px;
       }
 
     }
